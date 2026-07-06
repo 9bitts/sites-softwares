@@ -1,6 +1,6 @@
 /* ==========================================================
    9bitts — Configurador de proposta
-   Soma itens selecionados e monta o e-mail final
+   Soma itens selecionados e monta o e-mail final (multi-idioma)
    ========================================================== */
 
 (function () {
@@ -20,8 +20,21 @@
 
   if (!inputs.length) return;
 
+  function currentLang() {
+    try { return localStorage.getItem("9bitts_lang") || "pt"; } catch (e) { return "pt"; }
+  }
+
+  function tr(key) {
+    return window.t ? window.t(currentLang(), key) : key;
+  }
+
+  function itemTitle(key) {
+    return tr("item." + key + ".title");
+  }
+
   function formatBRL(value) {
-    return "R$ " + value.toLocaleString("pt-BR");
+    const locale = currentLang() === "en" ? "en-US" : "pt-BR";
+    return "R$ " + value.toLocaleString(locale);
   }
 
   function getSelected() {
@@ -31,31 +44,30 @@
   function render() {
     const selected = getSelected();
 
-    // row highlight
     inputs.forEach((i) => {
       const row = i.closest(".item-row");
       row.classList.toggle("checked", i.checked);
     });
 
-    // summary list
     summaryItems.innerHTML = "";
     if (selected.length === 0) {
+      summaryEmpty.textContent = tr("summary.empty");
       summaryEmpty.style.display = "block";
     } else {
       summaryEmpty.style.display = "none";
       selected.forEach((i) => {
         const price = parseFloat(i.getAttribute("data-price")) || 0;
         const recurring = i.getAttribute("data-recurring") === "true";
+        const key = i.getAttribute("data-item-key");
         const line = document.createElement("div");
         line.className = "summary-line";
         line.innerHTML =
-          "<span>" + i.getAttribute("data-label") + "</span><span>" +
-          formatBRL(price) + (recurring ? "/mês" : "") + "</span>";
+          "<span>" + itemTitle(key) + "</span><span>" +
+          formatBRL(price) + (recurring ? tr("price.perMonth") : "") + "</span>";
         summaryItems.appendChild(line);
       });
     }
 
-    // totals
     let oneTime = 0;
     let monthly = 0;
     selected.forEach((i) => {
@@ -70,13 +82,24 @@
     totalOneTimeEl.textContent = formatBRL(oneTime);
     if (monthly > 0) {
       monthlyRow.style.display = "flex";
-      totalMonthlyEl.textContent = formatBRL(monthly) + "/mês";
+      totalMonthlyEl.textContent = formatBRL(monthly) + tr("price.perMonth");
     } else {
       monthlyRow.style.display = "none";
     }
   }
 
   inputs.forEach((i) => i.addEventListener("change", render));
+
+  // Re-render whenever the language changes (updates item names, currency labels, etc.)
+  document.addEventListener("i18n:change", function () {
+    render();
+    document.querySelectorAll(".details-toggle").forEach((btn) => {
+      const details = btn.closest(".item-body").querySelector(".item-details");
+      const isOpen = details.classList.contains("open");
+      btn.textContent = tr(isOpen ? "summary.verMenos" : "summary.verMais");
+    });
+  });
+
   render();
 
   // ---------- "Ver mais detalhes" toggle (não deve marcar/desmarcar o item) ----------
@@ -86,7 +109,7 @@
       e.stopPropagation();
       const details = btn.closest(".item-body").querySelector(".item-details");
       const isOpen = details.classList.toggle("open");
-      btn.textContent = isOpen ? "Ver menos detalhes" : "Ver mais detalhes";
+      btn.textContent = tr(isOpen ? "summary.verMenos" : "summary.verMais");
     });
   });
 
@@ -95,7 +118,7 @@
     openEmailFormBtn.addEventListener("click", () => {
       const selected = getSelected();
       if (selected.length === 0) {
-        summaryEmpty.textContent = "Selecione ao menos um item antes de continuar.";
+        summaryEmpty.textContent = tr("summary.selectAtLeast");
         summaryEmpty.style.display = "block";
         return;
       }
@@ -113,18 +136,19 @@
       const lines = selected.map((i) => {
         const price = parseFloat(i.getAttribute("data-price")) || 0;
         const recurring = i.getAttribute("data-recurring") === "true";
+        const key = i.getAttribute("data-item-key");
         if (recurring) monthly += price; else oneTime += price;
-        return "- " + i.getAttribute("data-label") + ": " + formatBRL(price) + (recurring ? "/mês" : "");
+        return "- " + itemTitle(key) + ": " + formatBRL(price) + (recurring ? tr("price.perMonth") : "");
       });
 
-      let body = "Nova proposta montada pelo site 9bitts\n\n";
-      body += "Nome: " + name + "\n";
-      body += "E-mail: " + email + "\n\n";
-      body += "Itens selecionados:\n" + lines.join("\n") + "\n\n";
-      body += "Investimento inicial: " + formatBRL(oneTime) + "\n";
-      if (monthly > 0) body += "Recorrência mensal: " + formatBRL(monthly) + "/mês\n";
+      let body = tr("mail.intro") + "\n\n";
+      body += tr("mail.nameLabel") + ": " + name + "\n";
+      body += tr("mail.emailLabel") + ": " + email + "\n\n";
+      body += tr("mail.itemsHeader") + "\n" + lines.join("\n") + "\n\n";
+      body += tr("mail.investLabel") + " " + formatBRL(oneTime) + "\n";
+      if (monthly > 0) body += tr("mail.recorLabel") + " " + formatBRL(monthly) + tr("price.perMonth") + "\n";
 
-      const subject = "Proposta 9bitts - " + (name || "Novo contato");
+      const subject = tr("mail.subjectPrefix") + (name || tr("mail.defaultContact"));
       const mailto =
         "mailto:" + encodeURIComponent(DEST_EMAIL) +
         "?cc=" + encodeURIComponent(email) +

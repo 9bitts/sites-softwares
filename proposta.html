@@ -39,12 +39,17 @@
       <span class="logo-text">9bitts<em>.</em></span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html#sobre" data-cursor="hover">Sobre</a></li>
-      <li><a href="index.html#servicos" data-cursor="hover">Serviços</a></li>
-      <li><a href="index.html#portfolio" data-cursor="hover">Portfólio</a></li>
-      <li><a href="proposta.html" data-cursor="hover">Proposta</a></li>
-      <li><a href="index.html#contato" class="nav-cta" data-cursor="hover">Falar agora</a></li>
+      <li><a href="index.html#sobre" data-cursor="hover" data-i18n="nav.sobre">Sobre</a></li>
+      <li><a href="index.html#servicos" data-cursor="hover" data-i18n="nav.servicos">Serviços</a></li>
+      <li><a href="index.html#portfolio" data-cursor="hover" data-i18n="nav.portfolio">Portfólio</a></li>
+      <li><a href="proposta.html" data-cursor="hover" data-i18n="nav.proposta">Proposta</a></li>
+      <li><a href="index.html#contato" class="nav-cta" data-cursor="hover" data-i18n="nav.falarAgora">Falar agora</a></li>
     </ul>
+    <div class="lang-switch">
+      <button type="button" class="lang-btn" data-lang="pt" data-cursor="hover">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" data-cursor="hover">EN</button>
+      <button type="button" class="lang-btn" data-lang="de" data-cursor="hover">DE</button>
+    </div>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
       <span></span><span></span><span></span>
     </button>
@@ -55,9 +60,9 @@
 
   <section class="proposta-hero">
     <div class="container">
-      <span class="tag" data-reveal>Monte sua proposta</span>
-      <h1 data-reveal>Selecione o que você <span class="grad-text">precisa.</span><br>Veja o investimento <span class="grad-text">na hora.</span></h1>
-      <p data-reveal>Escolha o tipo de projeto e as funcionalidades que fazem sentido pro seu negócio. O valor é
+      <span class="tag" data-reveal data-i18n="proposta.tag">Monte sua proposta</span>
+      <h1 data-reveal data-i18n="proposta.h1Html">Selecione o que você <span class="grad-text">precisa.</span><br>Veja o investimento <span class="grad-text">na hora.</span></h1>
+      <p data-reveal data-i18n="proposta.p">Escolha o tipo de projeto e as funcionalidades que fazem sentido pro seu negócio. O valor é
         atualizado a cada seleção. No final, você recebe um resumo por e-mail — sem compromisso.</p>
     </div>
   </section>
@@ -67,24 +72,24 @@
     <div class="builder-main">
 
       <div class="builder-group" data-reveal>
-        <h2>1. Tipo de projeto</h2>
-        <p class="group-desc">Escolha a base do seu projeto (selecione uma opção).</p>
+        <h2 data-i18n="group1.title">1. Tipo de projeto</h2>
+        <p class="group-desc" data-i18n="group1.desc">Escolha a base do seu projeto (selecione uma opção).</p>
         <div class="item-list">
 
           <label class="item-row">
-            <input type="radio" name="base" class="builder-input" data-label="Landing page de conversão" data-price="1500">
+            <input type="radio" name="base" class="builder-input" data-item-key="landing" data-price="1500">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Landing page de conversão</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.landing.title">Landing page de conversão</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Página única de alta conversão, com copy orientada a resultado e testes de call-to-action.</p>
+              <p data-i18n="item.landing.desc">Página única de alta conversão, com copy orientada a resultado e testes de call-to-action.</p>
               <div class="item-details">
                 <ul>
-                  <li>Carregamento otimizado para menos de 2 segundos, mesmo em conexão fraca</li>
-                  <li>Estrutura já pronta para SEO on-page desde o primeiro dia</li>
-                  <li>Rastreamento de cada clique e envio de formulário configurado</li>
-                  <li>Layout testado pixel a pixel em qualquer tamanho de tela</li>
+                  <li data-i18n="item.landing.d1">Carregamento otimizado para menos de 2 segundos, mesmo em conexão fraca</li>
+                  <li data-i18n="item.landing.d2">Estrutura já pronta para SEO on-page desde o primeiro dia</li>
+                  <li data-i18n="item.landing.d3">Rastreamento de cada clique e envio de formulário configurado</li>
+                  <li data-i18n="item.landing.d4">Layout testado pixel a pixel em qualquer tamanho de tela</li>
                 </ul>
               </div>
             </div>
@@ -92,19 +97,19 @@
           </label>
 
           <label class="item-row">
-            <input type="radio" name="base" class="builder-input" data-label="Site institucional" data-price="3500">
+            <input type="radio" name="base" class="builder-input" data-item-key="institucional" data-price="3500">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Site institucional</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.institucional.title">Site institucional</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>4–6 páginas responsivas, formulário de contato e SEO técnico básico.</p>
+              <p data-i18n="item.institucional.desc">4–6 páginas responsivas, formulário de contato e SEO técnico básico.</p>
               <div class="item-details">
                 <ul>
-                  <li>Código semântico e acessível, sem depender de builders genéricos</li>
-                  <li>Formulários protegidos contra envio automatizado (spam/bots)</li>
-                  <li>Mapa do site e dados estruturados entregues prontos para buscadores</li>
-                  <li>Certificado de segurança e cabeçalhos de proteção configurados</li>
+                  <li data-i18n="item.institucional.d1">Código semântico e acessível, sem depender de builders genéricos</li>
+                  <li data-i18n="item.institucional.d2">Formulários protegidos contra envio automatizado (spam/bots)</li>
+                  <li data-i18n="item.institucional.d3">Mapa do site e dados estruturados entregues prontos para buscadores</li>
+                  <li data-i18n="item.institucional.d4">Certificado de segurança e cabeçalhos de proteção configurados</li>
                 </ul>
               </div>
             </div>
@@ -112,67 +117,67 @@
           </label>
 
           <label class="item-row">
-            <input type="radio" name="base" class="builder-input" data-label="Sistema / plataforma sob medida" data-price="15000">
+            <input type="radio" name="base" class="builder-input" data-item-key="sistema" data-price="15000">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Sistema / plataforma sob medida</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.sistema.title">Sistema / plataforma sob medida</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Login, banco de dados e painel administrativo, desenhados para o fluxo real do seu negócio.</p>
+              <p data-i18n="item.sistema.desc">Login, banco de dados e painel administrativo, desenhados para o fluxo real do seu negócio.</p>
               <div class="item-details">
                 <ul>
-                  <li>Senhas protegidas por hash forte — nunca armazenadas em texto puro</li>
-                  <li>Dados sensíveis criptografados de ponta a ponta, mesmo dentro do banco</li>
-                  <li>Trilha de auditoria completa: todo acesso e alteração fica registrado</li>
-                  <li>Controle rigoroso de permissões, impedindo que um usuário acesse dados de outro</li>
-                  <li>Validação de dados em todas as camadas, antes de qualquer gravação</li>
-                  <li>Banco de dados versionado, evoluindo sem perder histórico</li>
+                  <li data-i18n="item.sistema.d1">Senhas protegidas por hash forte — nunca armazenadas em texto puro</li>
+                  <li data-i18n="item.sistema.d2">Dados sensíveis criptografados de ponta a ponta, mesmo dentro do banco</li>
+                  <li data-i18n="item.sistema.d3">Trilha de auditoria completa: todo acesso e alteração fica registrado</li>
+                  <li data-i18n="item.sistema.d4">Controle rigoroso de permissões, impedindo que um usuário acesse dados de outro</li>
+                  <li data-i18n="item.sistema.d5">Validação de dados em todas as camadas, antes de qualquer gravação</li>
+                  <li data-i18n="item.sistema.d6">Banco de dados versionado, evoluindo sem perder histórico</li>
                 </ul>
               </div>
             </div>
-            <span class="item-price">R$ 15.000<span class="per">a partir de</span></span>
+            <span class="item-price">R$ 15.000<span class="per" data-i18n="price.aPartirDe">a partir de</span></span>
           </label>
 
           <label class="item-row">
-            <input type="radio" name="base" class="builder-input" data-label="Automação / integração personalizada" data-price="2500">
+            <input type="radio" name="base" class="builder-input" data-item-key="automacao" data-price="2500">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Automação / integração personalizada</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.automacao.title">Automação / integração personalizada</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Pipelines de conteúdo e integrações via API, publicando ou sincronizando informação sem esforço manual.</p>
+              <p data-i18n="item.automacao.desc">Pipelines de conteúdo e integrações via API, publicando ou sincronizando informação sem esforço manual.</p>
               <div class="item-details">
                 <ul>
-                  <li>Tarefas repetitivas automatizadas rodando em segundo plano</li>
-                  <li>Integração autenticada e criptografada com sistemas externos</li>
-                  <li>Monitoramento com alerta automático em caso de falha</li>
-                  <li>Reprocessamento automático quando um erro é temporário</li>
+                  <li data-i18n="item.automacao.d1">Tarefas repetitivas automatizadas rodando em segundo plano</li>
+                  <li data-i18n="item.automacao.d2">Integração autenticada e criptografada com sistemas externos</li>
+                  <li data-i18n="item.automacao.d3">Monitoramento com alerta automático em caso de falha</li>
+                  <li data-i18n="item.automacao.d4">Reprocessamento automático quando um erro é temporário</li>
                 </ul>
               </div>
             </div>
-            <span class="item-price">R$ 2.500<span class="per">a partir de</span></span>
+            <span class="item-price">R$ 2.500<span class="per" data-i18n="price.aPartirDe">a partir de</span></span>
           </label>
 
         </div>
       </div>
 
       <div class="builder-group" data-reveal>
-        <h2>2. Funcionalidades adicionais</h2>
-        <p class="group-desc">Marque quantas quiser — cada uma soma ao investimento inicial.</p>
+        <h2 data-i18n="group2.title">2. Funcionalidades adicionais</h2>
+        <p class="group-desc" data-i18n="group2.desc">Marque quantas quiser — cada uma soma ao investimento inicial.</p>
         <div class="item-list">
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Página extra" data-price="350">
+            <input type="checkbox" class="builder-input" data-item-key="pagina" data-price="350">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Página extra</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.pagina.title">Página extra</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Além do padrão incluso no pacote base.</p>
+              <p data-i18n="item.pagina.desc">Além do padrão incluso no pacote base.</p>
               <div class="item-details">
                 <ul>
-                  <li>Mesmo padrão de performance e responsividade das páginas principais</li>
-                  <li>Incluída na mesma estrutura de SEO técnico do restante do site</li>
+                  <li data-i18n="item.pagina.d1">Mesmo padrão de performance e responsividade das páginas principais</li>
+                  <li data-i18n="item.pagina.d2">Incluída na mesma estrutura de SEO técnico do restante do site</li>
                 </ul>
               </div>
             </div>
@@ -180,18 +185,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Blog integrado" data-price="900">
+            <input type="checkbox" class="builder-input" data-item-key="blog" data-price="900">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Blog integrado</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.blog.title">Blog integrado</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Publicação de conteúdo com categorias e busca.</p>
+              <p data-i18n="item.blog.desc">Publicação de conteúdo com categorias e busca.</p>
               <div class="item-details">
                 <ul>
-                  <li>Painel de publicação simples, sem precisar mexer em código</li>
-                  <li>Endereços de página otimizados para busca em cada artigo</li>
-                  <li>Busca interna instantânea por palavra-chave</li>
+                  <li data-i18n="item.blog.d1">Painel de publicação simples, sem precisar mexer em código</li>
+                  <li data-i18n="item.blog.d2">Endereços de página otimizados para busca em cada artigo</li>
+                  <li data-i18n="item.blog.d3">Busca interna instantânea por palavra-chave</li>
                 </ul>
               </div>
             </div>
@@ -199,19 +204,19 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Loja online / e-commerce" data-price="4500">
+            <input type="checkbox" class="builder-input" data-item-key="ecommerce" data-price="4500">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Loja online / e-commerce</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.ecommerce.title">Loja online / e-commerce</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Catálogo de produtos, carrinho e checkout.</p>
+              <p data-i18n="item.ecommerce.desc">Catálogo de produtos, carrinho e checkout.</p>
               <div class="item-details">
                 <ul>
-                  <li>Pagamento processado com criptografia de ponta a ponta</li>
-                  <li>Estoque atualizado automaticamente a cada venda</li>
-                  <li>Proteção contra fraude nas transações</li>
-                  <li>Confirmação de pedido enviada automaticamente</li>
+                  <li data-i18n="item.ecommerce.d1">Pagamento processado com criptografia de ponta a ponta</li>
+                  <li data-i18n="item.ecommerce.d2">Estoque atualizado automaticamente a cada venda</li>
+                  <li data-i18n="item.ecommerce.d3">Proteção contra fraude nas transações</li>
+                  <li data-i18n="item.ecommerce.d4">Confirmação de pedido enviada automaticamente</li>
                 </ul>
               </div>
             </div>
@@ -219,19 +224,19 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Login e área do usuário" data-price="3800">
+            <input type="checkbox" class="builder-input" data-item-key="login" data-price="3800">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Login e área do usuário</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.login.title">Login e área do usuário</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Autenticação segura e painel exclusivo por conta.</p>
+              <p data-i18n="item.login.desc">Autenticação segura e painel exclusivo por conta.</p>
               <div class="item-details">
                 <ul>
-                  <li>Senhas nunca armazenadas em texto puro — sempre protegidas por hash forte</li>
-                  <li>Sessões protegidas contra sequestro e reutilização indevida</li>
-                  <li>Recuperação de senha segura, sem expor dados da conta</li>
-                  <li>Isolamento total entre os dados de contas diferentes</li>
+                  <li data-i18n="item.login.d1">Senhas nunca armazenadas em texto puro — sempre protegidas por hash forte</li>
+                  <li data-i18n="item.login.d2">Sessões protegidas contra sequestro e reutilização indevida</li>
+                  <li data-i18n="item.login.d3">Recuperação de senha segura, sem expor dados da conta</li>
+                  <li data-i18n="item.login.d4">Isolamento total entre os dados de contas diferentes</li>
                 </ul>
               </div>
             </div>
@@ -239,18 +244,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Painel administrativo" data-price="5000">
+            <input type="checkbox" class="builder-input" data-item-key="painel" data-price="5000">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Painel administrativo</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.painel.title">Painel administrativo</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Gestão de conteúdo, usuários e dados pelo próprio time.</p>
+              <p data-i18n="item.painel.desc">Gestão de conteúdo, usuários e dados pelo próprio time.</p>
               <div class="item-details">
                 <ul>
-                  <li>Permissões configuráveis por tipo de usuário — quem vê e edita o quê</li>
-                  <li>Registro completo de quem alterou o quê e quando</li>
-                  <li>Validação de dados antes de qualquer gravação, evitando informação inconsistente</li>
+                  <li data-i18n="item.painel.d1">Permissões configuráveis por tipo de usuário — quem vê e edita o quê</li>
+                  <li data-i18n="item.painel.d2">Registro completo de quem alterou o quê e quando</li>
+                  <li data-i18n="item.painel.d3">Validação de dados antes de qualquer gravação, evitando informação inconsistente</li>
                 </ul>
               </div>
             </div>
@@ -258,18 +263,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Integração de pagamentos" data-price="1400">
+            <input type="checkbox" class="builder-input" data-item-key="pagamentos" data-price="1400">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Integração de pagamentos</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.pagamentos.title">Integração de pagamentos</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Pix, cartão e boleto direto no site ou sistema.</p>
+              <p data-i18n="item.pagamentos.desc">Pix, cartão e boleto direto no site ou sistema.</p>
               <div class="item-details">
                 <ul>
-                  <li>Nenhum dado de cartão trafega ou fica armazenado nos seus servidores</li>
-                  <li>Confirmação de pagamento validada diretamente com a instituição financeira</li>
-                  <li>Conciliação automática entre pedidos e pagamentos recebidos</li>
+                  <li data-i18n="item.pagamentos.d1">Nenhum dado de cartão trafega ou fica armazenado nos seus servidores</li>
+                  <li data-i18n="item.pagamentos.d2">Confirmação de pagamento validada diretamente com a instituição financeira</li>
+                  <li data-i18n="item.pagamentos.d3">Conciliação automática entre pedidos e pagamentos recebidos</li>
                 </ul>
               </div>
             </div>
@@ -277,18 +282,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Automação com APIs externas" data-price="2200">
+            <input type="checkbox" class="builder-input" data-item-key="apis" data-price="2200">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Automação com APIs externas</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.apis.title">Automação com APIs externas</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Integração com ferramentas e sistemas que você já usa.</p>
+              <p data-i18n="item.apis.desc">Integração com ferramentas e sistemas que você já usa.</p>
               <div class="item-details">
                 <ul>
-                  <li>Comunicação autenticada e criptografada entre sistemas</li>
-                  <li>Nova tentativa automática em caso de falha temporária</li>
-                  <li>Registro de cada chamada, facilitando diagnóstico de problemas</li>
+                  <li data-i18n="item.apis.d1">Comunicação autenticada e criptografada entre sistemas</li>
+                  <li data-i18n="item.apis.d2">Nova tentativa automática em caso de falha temporária</li>
+                  <li data-i18n="item.apis.d3">Registro de cada chamada, facilitando diagnóstico de problemas</li>
                 </ul>
               </div>
             </div>
@@ -296,18 +301,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Aplicativo mobile" data-price="9000">
+            <input type="checkbox" class="builder-input" data-item-key="mobile" data-price="9000">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Aplicativo mobile</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.mobile.title">Aplicativo mobile</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Complemento nativo ao sistema web, para iOS e Android.</p>
+              <p data-i18n="item.mobile.desc">Complemento nativo ao sistema web, para iOS e Android.</p>
               <div class="item-details">
                 <ul>
-                  <li>Mesma camada de autenticação segura do sistema principal</li>
-                  <li>Dados sincronizados em tempo real com a plataforma web</li>
-                  <li>Funcionamento parcial mantido mesmo com internet instável</li>
+                  <li data-i18n="item.mobile.d1">Mesma camada de autenticação segura do sistema principal</li>
+                  <li data-i18n="item.mobile.d2">Dados sincronizados em tempo real com a plataforma web</li>
+                  <li data-i18n="item.mobile.d3">Funcionamento parcial mantido mesmo com internet instável</li>
                 </ul>
               </div>
             </div>
@@ -315,18 +320,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Conteúdo multilíngue" data-price="1200">
+            <input type="checkbox" class="builder-input" data-item-key="multilingue" data-price="1200">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Conteúdo multilíngue</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.multilingue.title">Conteúdo multilíngue</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Site ou sistema disponível em mais de um idioma.</p>
+              <p data-i18n="item.multilingue.desc">Site ou sistema disponível em mais de um idioma.</p>
               <div class="item-details">
                 <ul>
-                  <li>Estrutura de tradução organizada, sem duplicar o site inteiro</li>
-                  <li>Detecção automática do idioma do visitante</li>
-                  <li>SEO configurado separadamente para cada idioma</li>
+                  <li data-i18n="item.multilingue.d1">Estrutura de tradução organizada, sem duplicar o site inteiro</li>
+                  <li data-i18n="item.multilingue.d2">Detecção automática do idioma do visitante</li>
+                  <li data-i18n="item.multilingue.d3">SEO configurado separadamente para cada idioma</li>
                 </ul>
               </div>
             </div>
@@ -334,18 +339,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="SEO técnico avançado" data-price="1000">
+            <input type="checkbox" class="builder-input" data-item-key="seo" data-price="1000">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>SEO técnico avançado</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.seo.title">SEO técnico avançado</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Estrutura, performance e dados otimizados para buscadores.</p>
+              <p data-i18n="item.seo.desc">Estrutura, performance e dados otimizados para buscadores.</p>
               <div class="item-details">
                 <ul>
-                  <li>Velocidade de carregamento otimizada nos indicadores usados pelo Google</li>
-                  <li>Dados estruturados para aparecer melhor nos resultados de busca</li>
-                  <li>Correção de erros técnicos que prejudicam a indexação</li>
+                  <li data-i18n="item.seo.d1">Velocidade de carregamento otimizada nos indicadores usados pelo Google</li>
+                  <li data-i18n="item.seo.d2">Dados estruturados para aparecer melhor nos resultados de busca</li>
+                  <li data-i18n="item.seo.d3">Correção de erros técnicos que prejudicam a indexação</li>
                 </ul>
               </div>
             </div>
@@ -353,18 +358,18 @@
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Identidade visual / logo" data-price="1600">
+            <input type="checkbox" class="builder-input" data-item-key="identidade" data-price="1600">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Identidade visual / logo</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.identidade.title">Identidade visual / logo</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Logo, paleta de cores e diretrizes básicas de marca.</p>
+              <p data-i18n="item.identidade.desc">Logo, paleta de cores e diretrizes básicas de marca.</p>
               <div class="item-details">
                 <ul>
-                  <li>Arquivos entregues em formato vetorial, prontos para qualquer uso</li>
-                  <li>Versões adaptadas para fundo claro e escuro</li>
-                  <li>Guia rápido de aplicação da marca</li>
+                  <li data-i18n="item.identidade.d1">Arquivos entregues em formato vetorial, prontos para qualquer uso</li>
+                  <li data-i18n="item.identidade.d2">Versões adaptadas para fundo claro e escuro</li>
+                  <li data-i18n="item.identidade.d3">Guia rápido de aplicação da marca</li>
                 </ul>
               </div>
             </div>
@@ -375,46 +380,46 @@
       </div>
 
       <div class="builder-group" data-reveal>
-        <h2>3. Recorrência (opcional)</h2>
-        <p class="group-desc">Planos mensais de suporte e evolução contínua — cobrados à parte do investimento inicial.</p>
+        <h2 data-i18n="group3.title">3. Recorrência (opcional)</h2>
+        <p class="group-desc" data-i18n="group3.desc">Planos mensais de suporte e evolução contínua — cobrados à parte do investimento inicial.</p>
         <div class="item-list">
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Manutenção mensal básica" data-price="200" data-recurring="true">
+            <input type="checkbox" class="builder-input" data-item-key="manutBasica" data-price="200" data-recurring="true">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Manutenção mensal básica</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.manutBasica.title">Manutenção mensal básica</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Hospedagem, backup e monitoramento.</p>
+              <p data-i18n="item.manutBasica.desc">Hospedagem, backup e monitoramento.</p>
               <div class="item-details">
                 <ul>
-                  <li>Backups automáticos e testados periodicamente</li>
-                  <li>Monitoramento contínuo da disponibilidade do site</li>
-                  <li>Certificado de segurança renovado automaticamente</li>
+                  <li data-i18n="item.manutBasica.d1">Backups automáticos e testados periodicamente</li>
+                  <li data-i18n="item.manutBasica.d2">Monitoramento contínuo da disponibilidade do site</li>
+                  <li data-i18n="item.manutBasica.d3">Certificado de segurança renovado automaticamente</li>
                 </ul>
               </div>
             </div>
-            <span class="item-price">R$ 200<span class="per">/mês</span></span>
+            <span class="item-price">R$ 200<span class="per" data-i18n="price.perMonth">/mês</span></span>
           </label>
 
           <label class="item-row">
-            <input type="checkbox" class="builder-input" data-label="Manutenção mensal completa" data-price="500" data-recurring="true">
+            <input type="checkbox" class="builder-input" data-item-key="manutCompleta" data-price="500" data-recurring="true">
             <div class="item-body">
               <div class="item-body-head">
-                <h3>Manutenção mensal completa</h3>
-                <button type="button" class="details-toggle" data-cursor="hover">Ver mais detalhes</button>
+                <h3 data-i18n="item.manutCompleta.title">Manutenção mensal completa</h3>
+                <button type="button" class="details-toggle" data-cursor="hover" data-i18n="summary.verMais">Ver mais detalhes</button>
               </div>
-              <p>Tudo da básica, mais pequenas alterações e evolução contínua.</p>
+              <p data-i18n="item.manutCompleta.desc">Tudo da básica, mais pequenas alterações e evolução contínua.</p>
               <div class="item-details">
                 <ul>
-                  <li>Tudo do plano básico</li>
-                  <li>Prioridade de atendimento em caso de problema</li>
-                  <li>Ciclo mensal de pequenas melhorias e ajustes</li>
+                  <li data-i18n="item.manutCompleta.d1">Tudo do plano básico</li>
+                  <li data-i18n="item.manutCompleta.d2">Prioridade de atendimento em caso de problema</li>
+                  <li data-i18n="item.manutCompleta.d3">Ciclo mensal de pequenas melhorias e ajustes</li>
                 </ul>
               </div>
             </div>
-            <span class="item-price">R$ 500<span class="per">/mês</span></span>
+            <span class="item-price">R$ 500<span class="per" data-i18n="price.perMonth">/mês</span></span>
           </label>
 
         </div>
@@ -423,33 +428,33 @@
     </div>
 
     <aside class="summary-panel" data-reveal>
-      <h2>Sua proposta</h2>
-      <p class="summary-empty" id="summaryEmpty">Nenhum item selecionado ainda.</p>
+      <h2 data-i18n="summary.title">Sua proposta</h2>
+      <p class="summary-empty" id="summaryEmpty" data-i18n="summary.empty">Nenhum item selecionado ainda.</p>
       <div class="summary-items" id="summaryItems"></div>
 
       <div class="summary-totals">
         <div class="total-row">
-          <span class="label">Investimento inicial</span>
+          <span class="label" data-i18n="summary.investInicial">Investimento inicial</span>
           <span class="value grad-text" id="totalOneTime">R$ 0</span>
         </div>
         <div class="total-row monthly" id="monthlyRow" style="display:none;">
-          <span class="label">Recorrência mensal</span>
+          <span class="label" data-i18n="summary.recorrenciaMensal">Recorrência mensal</span>
           <span class="value" id="totalMonthly">R$ 0/mês</span>
         </div>
       </div>
 
       <button class="btn btn-primary summary-cta" id="openEmailForm" data-cursor="hover" type="button">
-        <span>Salvar e receber por e-mail</span>
+        <span data-i18n="summary.saveBtn">Salvar e receber por e-mail</span>
       </button>
 
       <form class="email-form" id="emailForm">
-        <input type="text" id="nameInput" placeholder="Seu nome" required>
-        <input type="email" id="emailInput" placeholder="Seu melhor e-mail" required>
-        <button class="btn btn-ghost" type="submit" data-cursor="hover"><span>Enviar proposta</span></button>
-        <p class="email-hint">Vamos abrir seu e-mail já com a proposta pronta para enviar.</p>
+        <input type="text" id="nameInput" placeholder="Seu nome" data-i18n-ph="summary.namePh" required>
+        <input type="email" id="emailInput" placeholder="Seu melhor e-mail" data-i18n-ph="summary.emailPh" required>
+        <button class="btn btn-ghost" type="submit" data-cursor="hover"><span data-i18n="summary.sendBtn">Enviar proposta</span></button>
+        <p class="email-hint" data-i18n="summary.hint">Vamos abrir seu e-mail já com a proposta pronta para enviar.</p>
       </form>
 
-      <div class="confirm-msg" id="confirmMsg">Seu e-mail abriu com a proposta pronta. É só clicar em enviar por lá.</div>
+      <div class="confirm-msg" id="confirmMsg" data-i18n="summary.confirmMsg">Seu e-mail abriu com a proposta pronta. É só clicar em enviar por lá.</div>
     </aside>
 
   </section>
@@ -462,12 +467,13 @@
       <span class="logo-mark">9b</span>
       <span class="logo-text">9bitts<em>.</em></span>
     </div>
-    <p>© 2026 9bitts Softwares &amp; Sites. Sistemas web sob medida.</p>
+    <p>© 2026 9bitts Softwares &amp; Sites. <span data-i18n="footer.tagline">Sistemas web sob medida.</span></p>
   </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 <script src="js/proposta.js"></script>
 </body>

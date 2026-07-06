@@ -33,10 +33,6 @@ h1,h2,h3{ font-family:'Space Grotesk', 'Inter', sans-serif; margin:0; letter-spa
 p{ margin:0; }
 ul{ margin:0; padding:0; list-style:none; }
 a{ color:inherit; text-decoration:none; }
-button{
-  font-family: inherit; color: inherit; background: none; border: none;
-  cursor: pointer; -webkit-appearance: none; appearance: none;
-}
 img{ max-width:100%; display:block; }
 ::selection{ background: var(--accent); color:#000; }
 
@@ -87,6 +83,15 @@ img{ max-width:100%; display:block; }
 .nav-cta:hover{ border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
 .nav-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:8px; }
 .nav-toggle span{ width:22px; height:2px; background:var(--text); display:block; }
+
+.lang-switch{ display:flex; gap:6px; margin-left: 18px; }
+.lang-btn{
+  font-family:'JetBrains Mono',monospace; font-size:.7rem; letter-spacing:.03em;
+  padding:6px 11px; border-radius:999px; border:1px solid var(--border);
+  background: var(--surface); color: var(--text-dimmer); transition: border-color .2s, color .2s, background .2s;
+}
+.lang-btn:hover{ color: var(--text); border-color: rgba(0,240,255,0.4); }
+.lang-btn.active{ color: var(--text); border-color: var(--accent); background: rgba(0,240,255,0.1); }
 
 /* ============ HERO ============ */
 .hero{ position:relative; z-index:1; min-height: 100svh; display:flex; align-items:center; padding: 140px 0 80px; }
@@ -188,17 +193,6 @@ img{ max-width:100%; display:block; }
 .case-link:hover{ border-color: var(--accent); }
 .case-link .arrow{ transition: transform .3s var(--ease); }
 .case-link:hover .arrow{ transform: translate(3px,-3px); }
-.case-featured{
-  position: relative;
-  background: linear-gradient(160deg, rgba(0,240,255,0.07), rgba(123,92,255,0.05));
-  border-color: rgba(0,240,255,0.35);
-}
-.case-featured:hover{ border-color: rgba(0,240,255,0.55); }
-.case-badge{
-  position:absolute; top:-13px; left:38px; background: var(--grad); color:#05050a;
-  font-size:.7rem; font-weight:700; padding:5px 14px; border-radius:999px; letter-spacing:.03em;
-  font-family:'JetBrains Mono',monospace;
-}
 
 /* ============ TIMELINE ============ */
 .timeline{ display:grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
@@ -244,4 +238,6 @@ img{ max-width:100%; display:block; }
   .timeline{ grid-template-columns: 1fr; }
   .case-card{ flex-direction:column; align-items:flex-start; }
   .hero-stats{ gap: 34px; }
+  .lang-switch{ margin-left: auto; margin-right: 10px; }
+  .lang-btn{ padding: 6px 8px; }
 }
