@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monte sua proposta — 9bitts Softwares & Sites</title>
+<meta name="description" content="Monte sua proposta de site ou sistema sob medida: selecione o que precisa e veja o investimento em tempo real.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A0A12'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' font-weight='700' fill='%2300F0FF' text-anchor='middle'%3E9b%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/proposta.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="index.html#home" class="logo">
+      <span class="logo-mark">9b</span>
+      <span class="logo-text">9bitts<em>.</em></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#sobre" data-cursor="hover">Sobre</a></li>
+      <li><a href="index.html#servicos" data-cursor="hover">Serviços</a></li>
+      <li><a href="index.html#portfolio" data-cursor="hover">Portfólio</a></li>
+      <li><a href="proposta.html" data-cursor="hover">Proposta</a></li>
+      <li><a href="index.html#contato" class="nav-cta" data-cursor="hover">Falar agora</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="proposta-hero">
+    <div class="container">
+      <span class="tag" data-reveal>Monte sua proposta</span>
+      <h1 data-reveal>Selecione o que você <span class="grad-text">precisa.</span><br>Veja o investimento <span class="grad-text">na hora.</span></h1>
+      <p data-reveal>Escolha o tipo de projeto e as funcionalidades que fazem sentido pro seu negócio. O valor é
+        atualizado a cada seleção. No final, você recebe um resumo por e-mail — sem compromisso.</p>
+    </div>
+  </section>
+
+  <section class="builder container">
+
+    <div class="builder-main">
+
+      <div class="builder-group" data-reveal>
+        <h2>1. Tipo de projeto</h2>
+        <p class="group-desc">Escolha a base do seu projeto (selecione uma opção).</p>
+        <div class="item-list">
+
+          <label class="item-row">
+            <input type="radio" name="base" class="builder-input" data-label="Landing page de conversão" data-price="1500">
+            <div class="item-body">
+              <h3>Landing page de conversão</h3>
+              <p>Página única de alta conversão, com copy orientada a resultado e testes de call-to-action.</p>
+            </div>
+            <span class="item-price">R$ 1.500</span>
+          </label>
+
+          <label class="item-row">
+            <input type="radio" name="base" class="builder-input" data-label="Site institucional" data-price="3500">
+            <div class="item-body">
+              <h3>Site institucional</h3>
+              <p>4–6 páginas responsivas, formulário de contato e SEO técnico básico.</p>
+            </div>
+            <span class="item-price">R$ 3.500</span>
+          </label>
+
+          <label class="item-row">
+            <input type="radio" name="base" class="builder-input" data-label="Sistema / plataforma sob medida" data-price="15000">
+            <div class="item-body">
+              <h3>Sistema / plataforma sob medida</h3>
+              <p>Login, banco de dados e painel administrativo — modelo usado em Doctor8 e Bálsamo da Natureza.</p>
+            </div>
+            <span class="item-price">R$ 15.000<span class="per">a partir de</span></span>
+          </label>
+
+          <label class="item-row">
+            <input type="radio" name="base" class="builder-input" data-label="Automação / integração personalizada" data-price="2500">
+            <div class="item-body">
+              <h3>Automação / integração personalizada</h3>
+              <p>Pipelines de conteúdo e integrações via API — modelo usado no motor do 9bitts.</p>
+            </div>
+            <span class="item-price">R$ 2.500<span class="per">a partir de</span></span>
+          </label>
+
+        </div>
+      </div>
+
+      <div class="builder-group" data-reveal>
+        <h2>2. Funcionalidades adicionais</h2>
+        <p class="group-desc">Marque quantas quiser — cada uma soma ao investimento inicial.</p>
+        <div class="item-list">
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Página extra" data-price="350">
+            <div class="item-body"><h3>Página extra</h3><p>Além do padrão incluso no pacote base.</p></div>
+            <span class="item-price">R$ 350</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Blog integrado" data-price="900">
+            <div class="item-body"><h3>Blog integrado</h3><p>Publicação de conteúdo com categorias e busca.</p></div>
+            <span class="item-price">R$ 900</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Loja online / e-commerce" data-price="4500">
+            <div class="item-body"><h3>Loja online / e-commerce</h3><p>Catálogo de produtos, carrinho e checkout.</p></div>
+            <span class="item-price">R$ 4.500</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Login e área do usuário" data-price="3800">
+            <div class="item-body"><h3>Login e área do usuário</h3><p>Autenticação segura e painel exclusivo por conta.</p></div>
+            <span class="item-price">R$ 3.800</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Painel administrativo" data-price="5000">
+            <div class="item-body"><h3>Painel administrativo</h3><p>Gestão de conteúdo, usuários e dados pelo próprio time.</p></div>
+            <span class="item-price">R$ 5.000</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Integração de pagamentos" data-price="1400">
+            <div class="item-body"><h3>Integração de pagamentos</h3><p>Pix, cartão e boleto direto no site ou sistema.</p></div>
+            <span class="item-price">R$ 1.400</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Automação com APIs externas" data-price="2200">
+            <div class="item-body"><h3>Automação com APIs externas</h3><p>Integração com ferramentas e sistemas que você já usa.</p></div>
+            <span class="item-price">R$ 2.200</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Aplicativo mobile" data-price="9000">
+            <div class="item-body"><h3>Aplicativo mobile</h3><p>Complemento nativo ao sistema web, para iOS e Android.</p></div>
+            <span class="item-price">R$ 9.000</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Conteúdo multilíngue" data-price="1200">
+            <div class="item-body"><h3>Conteúdo multilíngue</h3><p>Site ou sistema disponível em mais de um idioma.</p></div>
+            <span class="item-price">R$ 1.200</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="SEO técnico avançado" data-price="1000">
+            <div class="item-body"><h3>SEO técnico avançado</h3><p>Estrutura, performance e dados otimizados para buscadores.</p></div>
+            <span class="item-price">R$ 1.000</span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Identidade visual / logo" data-price="1600">
+            <div class="item-body"><h3>Identidade visual / logo</h3><p>Logo, paleta de cores e diretrizes básicas de marca.</p></div>
+            <span class="item-price">R$ 1.600</span>
+          </label>
+
+        </div>
+      </div>
+
+      <div class="builder-group" data-reveal>
+        <h2>3. Recorrência (opcional)</h2>
+        <p class="group-desc">Planos mensais de suporte e evolução contínua — cobrados à parte do investimento inicial.</p>
+        <div class="item-list">
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Manutenção mensal básica" data-price="200" data-recurring="true">
+            <div class="item-body"><h3>Manutenção mensal básica</h3><p>Hospedagem, backup e monitoramento.</p></div>
+            <span class="item-price">R$ 200<span class="per">/mês</span></span>
+          </label>
+
+          <label class="item-row">
+            <input type="checkbox" class="builder-input" data-label="Manutenção mensal completa" data-price="500" data-recurring="true">
+            <div class="item-body"><h3>Manutenção mensal completa</h3><p>Tudo da básica, mais pequenas alterações e evolução contínua.</p></div>
+            <span class="item-price">R$ 500<span class="per">/mês</span></span>
+          </label>
+
+        </div>
+      </div>
+
+    </div>
+
+    <aside class="summary-panel" data-reveal>
+      <h2>Sua proposta</h2>
+      <p class="summary-empty" id="summaryEmpty">Nenhum item selecionado ainda.</p>
+      <div class="summary-items" id="summaryItems"></div>
+
+      <div class="summary-totals">
+        <div class="total-row">
+          <span class="label">Investimento inicial</span>
+          <span class="value grad-text" id="totalOneTime">R$ 0</span>
+        </div>
+        <div class="total-row monthly" id="monthlyRow" style="display:none;">
+          <span class="label">Recorrência mensal</span>
+          <span class="value" id="totalMonthly">R$ 0/mês</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary summary-cta" id="openEmailForm" data-cursor="hover" type="button">
+        <span>Salvar e receber por e-mail</span>
+      </button>
+
+      <form class="email-form" id="emailForm">
+        <input type="text" id="nameInput" placeholder="Seu nome" required>
+        <input type="email" id="emailInput" placeholder="Seu melhor e-mail" required>
+        <button class="btn btn-ghost" type="submit" data-cursor="hover"><span>Enviar proposta</span></button>
+        <p class="email-hint">Vamos abrir seu e-mail já com a proposta pronta para enviar.</p>
+      </form>
+
+      <div class="confirm-msg" id="confirmMsg">Seu e-mail abriu com a proposta pronta. É só clicar em enviar por lá.</div>
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="logo">
+      <span class="logo-mark">9b</span>
+      <span class="logo-text">9bitts<em>.</em></span>
+    </div>
+    <p>© 2026 9bitts Softwares &amp; Sites. Sistemas web sob medida.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/proposta.js"></script>
+</body>
+</html>
