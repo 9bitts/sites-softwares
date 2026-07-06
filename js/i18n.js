@@ -331,14 +331,30 @@ window.I18N = {
     document.dispatchEvent(new CustomEvent("i18n:change", { detail: { lang: lang } }));
   };
 
+  // Detecta idioma/região provável no primeiro acesso (sem preferência salva),
+  // usando fuso horário do navegador como aproximação de região.
+  var BR_ZONES = ["america/sao_paulo","america/fortaleza","america/recife","america/bahia",
+    "america/belem","america/manaus","america/cuiaba","america/campo_grande","america/boa_vista",
+    "america/porto_velho","america/rio_branco","america/araguaina","america/maceio","america/noronha"];
+
+  function detectInitialLang() {
+    try {
+      var tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "").toLowerCase();
+      var navLang = (navigator.language || "en").toLowerCase();
+      if (BR_ZONES.indexOf(tz) !== -1 || navLang.indexOf("pt") === 0) return "pt";
+      if (tz.indexOf("europe/") === 0 || navLang.indexOf("de") === 0) return "de";
+      return "en";
+    } catch (e) { return "pt"; }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         window.applyLanguage(btn.getAttribute("data-lang"));
       });
     });
-    var saved = "pt";
-    try { saved = localStorage.getItem("9bitts_lang") || "pt"; } catch (e) {}
-    window.applyLanguage(saved);
+    var saved = null;
+    try { saved = localStorage.getItem("9bitts_lang"); } catch (e) {}
+    window.applyLanguage(saved || detectInitialLang());
   });
 })();

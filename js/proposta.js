@@ -33,8 +33,8 @@
   }
 
   function formatBRL(value) {
-    const locale = currentLang() === "en" ? "en-US" : "pt-BR";
-    return "R$ " + value.toLocaleString(locale);
+    // Converte para a moeda correta do idioma atual (BRL/USD/EUR) via js/currency.js
+    return window.formatPrice ? window.formatPrice(value, currentLang()) : "R$ " + value.toLocaleString("pt-BR");
   }
 
   function getSelected() {
