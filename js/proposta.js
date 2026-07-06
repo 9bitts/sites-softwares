@@ -79,6 +79,17 @@
   inputs.forEach((i) => i.addEventListener("change", render));
   render();
 
+  // ---------- "Ver mais detalhes" toggle (não deve marcar/desmarcar o item) ----------
+  document.querySelectorAll(".details-toggle").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const details = btn.closest(".item-body").querySelector(".item-details");
+      const isOpen = details.classList.toggle("open");
+      btn.textContent = isOpen ? "Ver menos detalhes" : "Ver mais detalhes";
+    });
+  });
+
   // ---------- Email flow ----------
   if (openEmailFormBtn && emailForm) {
     openEmailFormBtn.addEventListener("click", () => {

@@ -45,6 +45,7 @@
 }
 
 .item-body{ flex:1; }
+.item-body-head{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
 .item-body h3{ font-size:1rem; font-weight:500; }
 .item-body p{ color: var(--text-dim); font-size:.85rem; margin-top:6px; }
 .item-price{
@@ -52,6 +53,18 @@
   white-space:nowrap; font-size:.98rem; margin-left:auto; padding-left: 12px;
 }
 .item-price .per{ color: var(--text-dimmer); font-size:.72rem; font-weight:400; display:block; text-align:right; }
+
+.details-toggle{
+  background:none; border:none; color: var(--accent); cursor:pointer; padding:2px 0;
+  font-family:'JetBrains Mono',monospace; font-size:.72rem; white-space:nowrap; letter-spacing:.02em;
+}
+.details-toggle:hover{ text-decoration: underline; }
+
+.item-details{ display:none; margin-top:14px; padding-top:14px; border-top:1px dashed var(--border); }
+.item-details.open{ display:block; }
+.item-details ul{ display:flex; flex-direction:column; gap:8px; }
+.item-details li{ font-size:.8rem; color: var(--text-dim); padding-left:16px; position:relative; }
+.item-details li::before{ content:'—'; position:absolute; left:0; color: var(--accent-2); }
 
 /* ---------- Summary sidebar ---------- */
 .summary-panel{
