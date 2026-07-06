@@ -184,6 +184,17 @@ img{ max-width:100%; display:block; }
 .case-link:hover{ border-color: var(--accent); }
 .case-link .arrow{ transition: transform .3s var(--ease); }
 .case-link:hover .arrow{ transform: translate(3px,-3px); }
+.case-featured{
+  position: relative;
+  background: linear-gradient(160deg, rgba(0,240,255,0.07), rgba(123,92,255,0.05));
+  border-color: rgba(0,240,255,0.35);
+}
+.case-featured:hover{ border-color: rgba(0,240,255,0.55); }
+.case-badge{
+  position:absolute; top:-13px; left:38px; background: var(--grad); color:#05050a;
+  font-size:.7rem; font-weight:700; padding:5px 14px; border-radius:999px; letter-spacing:.03em;
+  font-family:'JetBrains Mono',monospace;
+}
 
 /* ============ TIMELINE ============ */
 .timeline{ display:grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
