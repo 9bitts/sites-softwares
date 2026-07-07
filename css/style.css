@@ -208,6 +208,17 @@ img{ max-width:100%; display:block; }
   border-radius: 28px; border:1px solid var(--border);
   background: radial-gradient(circle at 50% 0%, rgba(0,240,255,0.08), transparent 60%), var(--surface);
 }
+.contact-photo{
+  width: 112px; height: 112px; margin: 0 auto 24px; padding: 3px;
+  border-radius: 50%; background: var(--grad);
+  box-shadow: 0 0 0 1px var(--border), 0 25px 60px -18px rgba(0,240,255,0.4);
+  transition: transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.contact-photo:hover{ transform: translateY(-4px); box-shadow: 0 0 0 1px var(--border), 0 30px 70px -15px rgba(123,92,255,0.5); }
+.contact-photo img{
+  width:100%; height:100%; object-fit:cover; display:block;
+  border-radius:50%; border: 3px solid var(--bg);
+}
 .contact-box .tag{ display:block; margin-bottom: 18px; }
 .contact-box h2{ font-size: clamp(1.8rem,4vw,2.7rem); }
 .contact-box p{ color: var(--text-dim); margin-top:18px; font-size:1.05rem; }
