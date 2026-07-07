@@ -56,6 +56,8 @@ window.I18N = {
     },
     contato:{
       tag:"05 · Contato",
+      founderName:"Diego Albs",
+      founderRole:"Fundador da 9bitts",
       titleHtml:'Vamos construir o <span class="grad-text">seu sistema?</span>',
       desc:"Conte o que você precisa. Respondemos com um diagnóstico real, não um roteiro de vendas.",
       emailBtn:"Enviar e-mail", whatsBtn:"Chamar no WhatsApp"
@@ -153,6 +155,8 @@ window.I18N = {
     },
     contato:{
       tag:"05 · Contact",
+      founderName:"Diego Albs",
+      founderRole:"Founder of 9bitts",
       titleHtml:'Ready to build <span class="grad-text">your system?</span>',
       desc:"Tell us what you need. We respond with a real diagnosis, not a sales script.",
       emailBtn:"Send an email", whatsBtn:"Message on WhatsApp"
@@ -250,6 +254,8 @@ window.I18N = {
     },
     contato:{
       tag:"05 · Kontakt",
+      founderName:"Diego Albs",
+      founderRole:"Gründer von 9bitts",
       titleHtml:'Lassen Sie uns <span class="grad-text">Ihr System bauen.</span>',
       desc:"Erzählen Sie uns, was Sie brauchen. Wir antworten mit einer echten Diagnose, nicht mit einem Verkaufsskript.",
       emailBtn:"E-Mail senden", whatsBtn:"Auf WhatsApp schreiben"
