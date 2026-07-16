@@ -95,6 +95,18 @@
 }
 .email-form input::placeholder{ color: var(--text-dimmer); }
 .email-form input:focus{ outline:none; border-color: var(--accent); }
+
+/* Botão "Enviar proposta" em neon (é um <button>, não herda a cor clara como os links) */
+.email-form button[type="submit"],
+.email-form button[type="submit"] span{ color: var(--accent); }
+.email-form button[type="submit"]{
+  font-weight:600; letter-spacing:.02em;
+  text-shadow: 0 0 10px rgba(0,240,255,.5);
+}
+.email-form button[type="submit"]:hover{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent) inset, 0 0 18px rgba(0,240,255,.25);
+}
 .email-hint{ font-size:.75rem; color: var(--text-dimmer); }
 
 .confirm-msg{
