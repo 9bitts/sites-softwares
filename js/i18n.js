@@ -4,13 +4,14 @@
 
 window.I18N = {
   pt: {
-    nav: { sobre:"Sobre", servicos:"Serviços", portfolio:"Portfólio", proposta:"Proposta", falarAgora:"Falar agora" },
+    nav: { sobre:"Sobre", seguranca:"Segurança", servicos:"Serviços", portfolio:"Portfólio", proposta:"Proposta", falarAgora:"Falar agora" },
     hero: {
       eyebrow:"Disponível para novos projetos · 2026",
       titleHtml:'Sistemas web que<br><span class="grad-text">funcionam de verdade.</span>',
-      sub:"Construo sites e plataformas sob medida para clínicas, negócios de bem-estar e organizações que precisam de mais do que uma página institucional — precisam de uma ferramenta que resolve um problema real.",
+      sub:"Construo plataformas sob medida para clínicas, negócios de bem-estar e organizações de saúde — com a segurança e a conformidade que dados sensíveis exigem, desde a primeira linha de código.",
       cta1:"Iniciar um projeto", cta2:"Ver o portfólio",
-      stat1:"projetos entregues e no ar", stat2:"países atendidos", stat3:"código sob medida, zero templates genéricos"
+      stat1:"projetos entregues e no ar", stat2:"países atendidos", stat3:"código sob medida, zero templates genéricos",
+      stat4:"vulnerabilidades de segurança identificadas e corrigidas em auditoria"
     },
     marquee:{ m1:"Next-gen frontend", m2:"Arquitetura de sistemas", m3:"Autenticação & segurança", m4:"Automação & APIs", m5:"Design de interface", m6:"Performance & SEO técnico" },
     sobre:{
@@ -21,11 +22,21 @@ window.I18N = {
       card2Title:"Tecnologia sólida", card2Desc:"Autenticação, banco de dados, automações e integrações — a mesma base que uso nas minhas plataformas em produção.",
       card3Title:"Parceria contínua", card3Desc:"Manutenção, evolução e suporte depois do lançamento — o projeto não termina na entrega."
     },
+    seguranca:{
+      tag:"02 · Segurança & Conformidade",
+      titleHtml:'Não é promessa de marketing.<br><span class="grad-text">É arquitetura.</span>',
+      desc:"Todo sistema que construo já nasce pensado para lidar com dados sensíveis — porque foi assim que aprendi, construindo uma plataforma de saúde real, em produção, com pacientes de verdade.",
+      card1Title:"Criptografia de ponta a ponta", card1Desc:"Dados sensíveis nunca trafegam nem ficam armazenados em texto puro — nem mesmo dentro do banco de dados.",
+      card2Title:"Trilha de auditoria completa", card2Desc:"Todo acesso e toda alteração ficam registrados. Se algo mudar, dá para saber quem, quando e o quê.",
+      card3Title:"LGPD & GDPR desde o design", card3Desc:"Conformidade não é um formulário preenchido depois. É decisão de arquitetura tomada antes da primeira linha de código.",
+      card4Title:"Assino acordo de tratamento de dados", card4Desc:"Se o seu negócio exige um DPA — ou um AV-Vertrag, na Alemanha — eu assino. Sem rodeio."
+    },
     servicos:{
-      tag:"02 · Serviços",
+      tag:"03 · Serviços",
       titleHtml:'Pacotes claros. <span class="grad-text">Sem letra miúda.</span>',
       desc:"Escopo, prazo e investimento definidos antes de começar. Cada pacote pode ser ajustado ao seu caso.",
-      cta:"Montar minha proposta →"
+      cta:"Montar minha proposta →",
+      guarantee:"Escopo, prazo e preço fechados por escrito antes de qualquer linha de código — sem surpresa na fatura."
     },
     price:{
       aPartirDe:"a partir de", perMonth:"/mês", featuredBadge:"Mais completo",
@@ -36,18 +47,19 @@ window.I18N = {
       manutencao:{ title:"Manutenção mensal", time:"Recorrente", li1:"Hospedagem e backups", li2:"Pequenas alterações inclusas", li3:"Monitoramento e suporte", li4:"Evolução contínua do sistema" }
     },
     portfolio:{
-      tag:"03 · Portfólio",
+      tag:"04 · Portfólio",
       titleHtml:'Projetos reais, <span class="grad-text">no ar agora.</span>',
       desc:"Todos os projetos abaixo são meus — produtos que construí e opero em produção. Não é layout, é sistema no ar. É a mesma engenharia que aplico no seu.",
-      badgeMaior:"Maior projeto"
+      badgeMaior:"Maior projeto",
+      labelDesafio:"Desafio", labelAbordagem:"Abordagem", labelResultado:"Resultado"
     },
-    caseClubdoctor:{ tag:"Marketplace completo · Telemedicina", desc:"Plataforma completa de telemedicina para pacientes e profissionais: agendamento, prontuário digital, receitas, exames, mensagens e teleconsulta, com assinatura recorrente (Club Doctor) e rede de mais de 80 especialidades em Brasil, Estados Unidos, Europa e Venezuela.", li1:"Marketplace paciente + profissional", li2:"Assinatura recorrente & pagamentos", li3:"Conformidade LGPD & HIPAA", li4:"Operação em 4 países" },
-    caseEight:{ tag:"Rede profissional verificada", desc:"Rede social para profissionais de saúde verificados — porta de entrada do ecossistema Doctor8, com verificação de registro profissional em Brasil, Estados Unidos e Europa.", li1:"Autenticação & verificação de identidade", li2:"Arquitetura multi-país" },
-    caseBalsamo:{ tag:"Catálogo inteligente", desc:"Sistema de busca de chás medicinais por sintoma, cruzando décadas de conhecimento popular brasileiro com uma base de dados de 42 plantas e 17 protocolos.", li1:"Busca e filtro dinâmico", li2:"Banco de dados estruturado", li3:"UX de descoberta de conteúdo" },
-    caseAcura:{ tag:"Institucional · OSCIP", desc:"Site institucional multilíngue para associação de saúde, com sistema de doações, telemedicina integrada ao Doctor8 e portal público de transparência.", li1:"Doação online recorrente", li2:"Integração entre sistemas", li3:"Conteúdo multilíngue (PT/ES)" },
+    caseClubdoctor:{ tag:"Marketplace completo · Telemedicina", desafio:"Pacientes em 4 países sem acesso unificado a especialistas — e profissionais de saúde sem uma rede verificada para atender remotamente com segurança.", abordagem:"Marketplace completo com autenticação forte, prontuário digital criptografado, agendamento e teleconsulta — arquitetura pensada desde o início para LGPD e HIPAA.", resultado:"Rede ativa com mais de 80 especialidades, operando em Brasil, Estados Unidos, Europa e Venezuela, com dados de pacientes protegidos ponta a ponta.", li1:"Marketplace paciente + profissional", li2:"Assinatura recorrente & pagamentos", li3:"Conformidade LGPD & HIPAA", li4:"Operação em 4 países" },
+    caseEight:{ tag:"Rede profissional verificada", desafio:"Antes de marcar uma consulta, o paciente precisa confiar que quem está do outro lado é um profissional de saúde real e verificado.", abordagem:"Rede social fechada com verificação de registro profissional em três regiões diferentes, servindo como porta de entrada segura para o ecossistema Doctor8.", resultado:"Camada de confiança que sustenta toda a operação multi-país do Doctor8.", li1:"Autenticação & verificação de identidade", li2:"Arquitetura multi-país" },
+    caseBalsamo:{ tag:"Catálogo inteligente", desafio:"Décadas de conhecimento popular sobre chás medicinais espalhadas, sem nenhuma forma de busca por sintoma.", abordagem:"Banco de dados estruturado com 42 plantas e 17 protocolos, com busca e filtro dinâmico pensados para quem não é especialista.", resultado:"Catálogo no ar, usado como referência de consulta rápida por sintoma.", li1:"Busca e filtro dinâmico", li2:"Banco de dados estruturado", li3:"UX de descoberta de conteúdo" },
+    caseAcura:{ tag:"Institucional · OSCIP", desafio:"Associação de saúde precisava captar doações, ganhar confiança pública e oferecer telemedicina sem construir tudo do zero.", abordagem:"Site institucional multilíngue com doação recorrente e integração direta com a infraestrutura de telemedicina do Doctor8.", resultado:"Portal público de transparência ativo, com doação online e atendimento remoto integrados.", li1:"Doação online recorrente", li2:"Integração entre sistemas", li3:"Conteúdo multilíngue (PT/ES)" },
     caseNinebitts:{ tag:"Automação de conteúdo", desc:"Marca autoral de curadoria musical publicada em oito plataformas simultaneamente, rodando sobre um pipeline próprio de automação de conteúdo.", li1:"Publicação automatizada multi-canal", li2:"Integrações com YouTube, Mixcloud e redes sociais", li3:"Sistema de curadoria e catálogo" },
     processo:{
-      tag:"04 · Processo",
+      tag:"05 · Processo",
       titleHtml:'Do primeiro contato <span class="grad-text">ao sistema no ar.</span>',
       step1Title:"Diagnóstico", step1Desc:"Entendo sua dor, seu orçamento e seu prazo em uma conversa direta — sem enrolação.",
       step2Title:"Proposta", step2Desc:"Escopo, prazo e investimento definidos por escrito antes de qualquer linha de código.",
@@ -55,7 +67,7 @@ window.I18N = {
       step4Title:"Lançamento & parceria", step4Desc:"Publicação, suporte contínuo e evolução do sistema conforme seu negócio cresce."
     },
     contato:{
-      tag:"05 · Contato",
+      tag:"06 · Contato",
       founderName:"Diego Albs",
       founderRole:"Fundador da 9bitts",
       titleHtml:'Vamos construir o <span class="grad-text">seu sistema?</span>',
@@ -103,13 +115,14 @@ window.I18N = {
   },
 
   en: {
-    nav:{ sobre:"About", servicos:"Services", portfolio:"Portfolio", proposta:"Proposal", falarAgora:"Talk to us" },
+    nav:{ sobre:"About", seguranca:"Security", servicos:"Services", portfolio:"Portfolio", proposta:"Proposal", falarAgora:"Talk to us" },
     hero:{
       eyebrow:"Available for new projects · 2026",
       titleHtml:'Web systems that<br><span class="grad-text">actually work.</span>',
-      sub:"I build custom websites and platforms for clinics, wellness businesses and organizations that need more than an institutional page — they need a tool that solves a real problem.",
+      sub:"I build custom platforms for clinics, wellness businesses and health organizations — with the security and compliance sensitive data demands, from the first line of code.",
       cta1:"Start a project", cta2:"See the portfolio",
-      stat1:"projects delivered and live", stat2:"countries served", stat3:"custom code, zero generic templates"
+      stat1:"projects delivered and live", stat2:"countries served", stat3:"custom code, zero generic templates",
+      stat4:"security vulnerabilities identified and fixed in audit"
     },
     marquee:{ m1:"Next-gen frontend", m2:"Systems architecture", m3:"Authentication & security", m4:"Automation & APIs", m5:"Interface design", m6:"Performance & technical SEO" },
     sobre:{
@@ -120,11 +133,21 @@ window.I18N = {
       card2Title:"Solid technology", card2Desc:"Authentication, databases, automations and integrations — the same foundation I use in my own production platforms.",
       card3Title:"Ongoing partnership", card3Desc:"Maintenance, evolution and support after launch — the project doesn&#8217;t end at delivery."
     },
+    seguranca:{
+      tag:"02 · Security & Compliance",
+      titleHtml:'It&#8217;s not a marketing promise.<br><span class="grad-text">It&#8217;s architecture.</span>',
+      desc:"Every system I build is designed from day one to handle sensitive data — because that&#8217;s how I learned, building a real health platform in production, with real patients.",
+      card1Title:"End-to-end encryption", card1Desc:"Sensitive data never travels or is stored in plain text — not even inside the database.",
+      card2Title:"Full audit trail", card2Desc:"Every access and every change is logged. If something changes, you can tell who, when and what.",
+      card3Title:"GDPR & LGPD by design", card3Desc:"Compliance isn&#8217;t a form filled out afterward. It&#8217;s an architecture decision made before the first line of code.",
+      card4Title:"I sign data processing agreements", card4Desc:"If your business requires a DPA — a Business Associate Agreement, or an AV-Vertrag in Germany — I sign it. No hesitation."
+    },
     servicos:{
-      tag:"02 · Services",
+      tag:"03 · Services",
       titleHtml:'Clear packages. <span class="grad-text">No fine print.</span>',
       desc:"Scope, timeline and investment defined before we start. Every package can be adjusted to your case.",
-      cta:"Build my proposal →"
+      cta:"Build my proposal →",
+      guarantee:"Scope, timeline and price locked in writing before a single line of code — no surprises on the invoice."
     },
     price:{
       aPartirDe:"starting from", perMonth:"/mo", featuredBadge:"Most complete",
@@ -135,18 +158,19 @@ window.I18N = {
       manutencao:{ title:"Monthly maintenance", time:"Recurring", li1:"Hosting and backups", li2:"Small changes included", li3:"Monitoring and support", li4:"Continuous system evolution" }
     },
     portfolio:{
-      tag:"03 · Portfolio",
+      tag:"04 · Portfolio",
       titleHtml:'Real projects, <span class="grad-text">live right now.</span>',
       desc:"Every project below is my own — products I built and run in production. Not a layout, a live system. The same engineering I bring to yours.",
-      badgeMaior:"Biggest project"
+      badgeMaior:"Biggest project",
+      labelDesafio:"Challenge", labelAbordagem:"Approach", labelResultado:"Result"
     },
-    caseClubdoctor:{ tag:"Full marketplace · Telehealth", desc:"Complete telehealth platform for patients and professionals: scheduling, digital medical records, prescriptions, lab orders, messaging and video consultations, with a recurring subscription (Club Doctor) and a network of 80+ specialties across Brazil, the United States, Europe and Venezuela.", li1:"Patient + professional marketplace", li2:"Recurring subscription & payments", li3:"LGPD & HIPAA-aligned", li4:"Operating in 4 countries" },
-    caseEight:{ tag:"Verified professional network", desc:"Social network for verified health professionals — the entry point to the Doctor8 ecosystem, with professional license verification in Brazil, the United States and Europe.", li1:"Authentication & identity verification", li2:"Multi-country architecture" },
-    caseBalsamo:{ tag:"Smart catalog", desc:"Symptom-based search system for medicinal teas, combining decades of Brazilian folk knowledge with a database of 42 plants and 17 protocols.", li1:"Dynamic search & filtering", li2:"Structured database", li3:"Content discovery UX" },
-    caseAcura:{ tag:"Institutional · Nonprofit", desc:"Multilingual institutional website for a health association, with a donation system, telehealth integrated with Doctor8, and a public transparency portal.", li1:"Recurring online donations", li2:"Cross-system integration", li3:"Multilingual content (PT/ES)" },
+    caseClubdoctor:{ tag:"Full marketplace · Telehealth", desafio:"Patients in 4 countries with no unified access to specialists — and health professionals with no verified network to safely see patients remotely.", abordagem:"Full marketplace with strong authentication, encrypted digital medical records, scheduling and video consultations — architecture designed from day one for LGPD and HIPAA.", resultado:"Active network with 80+ specialties, operating in Brazil, the United States, Europe and Venezuela, with patient data protected end-to-end.", li1:"Patient + professional marketplace", li2:"Recurring subscription & payments", li3:"LGPD & HIPAA-aligned", li4:"Operating in 4 countries" },
+    caseEight:{ tag:"Verified professional network", desafio:"Before booking a consultation, the patient needs to trust that the person on the other end is a real, verified health professional.", abordagem:"Closed social network with professional license verification across three regions, serving as a secure entry point to the Doctor8 ecosystem.", resultado:"The trust layer that underpins Doctor8&#8217;s entire multi-country operation.", li1:"Authentication & identity verification", li2:"Multi-country architecture" },
+    caseBalsamo:{ tag:"Smart catalog", desafio:"Decades of Brazilian folk knowledge about medicinal teas, scattered, with no way to search by symptom.", abordagem:"Structured database with 42 plants and 17 protocols, with dynamic search and filtering designed for non-experts.", resultado:"A live catalog, used as a quick symptom-lookup reference.", li1:"Dynamic search & filtering", li2:"Structured database", li3:"Content discovery UX" },
+    caseAcura:{ tag:"Institutional · Nonprofit", desafio:"A health association needed to raise donations, earn public trust, and offer telehealth without building everything from scratch.", abordagem:"Multilingual institutional website with recurring donations and direct integration with Doctor8&#8217;s telehealth infrastructure.", resultado:"An active public transparency portal, with online donations and remote care integrated.", li1:"Recurring online donations", li2:"Cross-system integration", li3:"Multilingual content (PT/ES)" },
     caseNinebitts:{ tag:"Content automation", desc:"Independent music curation brand published across eight platforms simultaneously, running on a custom content automation pipeline.", li1:"Automated multi-channel publishing", li2:"Integrations with YouTube, Mixcloud and social media", li3:"Curation and catalog system" },
     processo:{
-      tag:"04 · Process",
+      tag:"05 · Process",
       titleHtml:'From first contact <span class="grad-text">to system live.</span>',
       step1Title:"Diagnosis", step1Desc:"I understand your pain point, budget and timeline in one direct conversation — no runaround.",
       step2Title:"Proposal", step2Desc:"Scope, timeline and investment defined in writing before a single line of code.",
@@ -154,7 +178,7 @@ window.I18N = {
       step4Title:"Launch & partnership", step4Desc:"Launch, ongoing support and system evolution as your business grows."
     },
     contato:{
-      tag:"05 · Contact",
+      tag:"06 · Contact",
       founderName:"Diego Albs",
       founderRole:"Founder of 9bitts",
       titleHtml:'Ready to build <span class="grad-text">your system?</span>',
@@ -202,13 +226,14 @@ window.I18N = {
   },
 
   de: {
-    nav:{ sobre:"Über uns", servicos:"Leistungen", portfolio:"Portfolio", proposta:"Angebot", falarAgora:"Jetzt sprechen" },
+    nav:{ sobre:"Über uns", seguranca:"Sicherheit", servicos:"Leistungen", portfolio:"Portfolio", proposta:"Angebot", falarAgora:"Jetzt sprechen" },
     hero:{
       eyebrow:"Verfügbar für neue Projekte · 2026",
       titleHtml:'Web-Systeme, die<br><span class="grad-text">wirklich funktionieren.</span>',
-      sub:"Ich entwickle maßgeschneiderte Websites und Plattformen für Kliniken, Wellness-Unternehmen und Organisationen, die mehr brauchen als eine institutionelle Seite — sie brauchen ein Werkzeug, das ein echtes Problem löst.",
+      sub:"Ich entwickle maßgeschneiderte Plattformen für Kliniken, Wellness-Unternehmen und Gesundheitsorganisationen — mit der Sicherheit und Konformität, die sensible Daten erfordern, von der ersten Zeile Code an.",
       cta1:"Projekt starten", cta2:"Portfolio ansehen",
-      stat1:"gelieferte, laufende Projekte", stat2:"bediente Länder", stat3:"maßgeschneiderter Code, keine Templates von der Stange"
+      stat1:"gelieferte, laufende Projekte", stat2:"bediente Länder", stat3:"maßgeschneiderter Code, keine Templates von der Stange",
+      stat4:"in der Sicherheitsaudit identifizierte und behobene Schwachstellen"
     },
     marquee:{ m1:"Next-gen frontend", m2:"Systemarchitektur", m3:"Authentifizierung & Sicherheit", m4:"Automatisierung & APIs", m5:"Interface-Design", m6:"Performance & technisches SEO" },
     sobre:{
@@ -219,11 +244,21 @@ window.I18N = {
       card2Title:"Solide Technologie", card2Desc:"Authentifizierung, Datenbanken, Automatisierungen und Integrationen — dieselbe Grundlage, die ich in meinen eigenen Produktionsplattformen nutze.",
       card3Title:"Kontinuierliche Partnerschaft", card3Desc:"Wartung, Weiterentwicklung und Support nach dem Launch — das Projekt endet nicht mit der Lieferung."
     },
+    seguranca:{
+      tag:"02 · Sicherheit & Konformität",
+      titleHtml:'Kein Marketingversprechen.<br><span class="grad-text">Architektur.</span>',
+      desc:"Jedes System, das ich baue, ist von Anfang an für den Umgang mit sensiblen Daten ausgelegt — so habe ich es gelernt, beim Bau einer echten Gesundheitsplattform in Produktion, mit echten Patienten.",
+      card1Title:"Ende-zu-Ende-Verschlüsselung", card1Desc:"Sensible Daten werden nie im Klartext übertragen oder gespeichert — nicht einmal innerhalb der Datenbank.",
+      card2Title:"Vollständiges Audit-Protokoll", card2Desc:"Jeder Zugriff und jede Änderung wird protokolliert. Bei einer Änderung lässt sich nachvollziehen, wer, wann und was.",
+      card3Title:"DSGVO & LGPD von Anfang an", card3Desc:"Konformität ist kein nachträglich ausgefülltes Formular. Es ist eine Architekturentscheidung, die vor der ersten Zeile Code getroffen wird.",
+      card4Title:"Ich unterschreibe Auftragsverarbeitungsverträge", card4Desc:"Wenn Ihr Unternehmen einen AV-Vertrag oder ein DPA benötigt, unterschreibe ich. Ohne Zögern."
+    },
     servicos:{
-      tag:"02 · Leistungen",
+      tag:"03 · Leistungen",
       titleHtml:'Klare Pakete. <span class="grad-text">Ohne Kleingedrucktes.</span>',
       desc:"Umfang, Zeitrahmen und Investition werden vor Projektbeginn festgelegt. Jedes Paket kann an Ihren Fall angepasst werden.",
-      cta:"Mein Angebot erstellen →"
+      cta:"Mein Angebot erstellen →",
+      guarantee:"Umfang, Zeitrahmen und Preis schriftlich festgelegt, bevor auch nur eine Zeile Code geschrieben wird — keine Überraschungen auf der Rechnung."
     },
     price:{
       aPartirDe:"ab", perMonth:"/Monat", featuredBadge:"Umfangreichstes",
@@ -234,18 +269,19 @@ window.I18N = {
       manutencao:{ title:"Monatliche Wartung", time:"Wiederkehrend", li1:"Hosting und Backups", li2:"Kleine Änderungen inklusive", li3:"Monitoring und Support", li4:"Kontinuierliche Weiterentwicklung des Systems" }
     },
     portfolio:{
-      tag:"03 · Portfolio",
+      tag:"04 · Portfolio",
       titleHtml:'Echte Projekte, <span class="grad-text">gerade jetzt live.</span>',
       desc:"Alle Projekte unten sind meine eigenen — Produkte, die ich gebaut habe und in Produktion betreibe. Kein Layout, ein Live-System. Dieselbe Technik, die ich in Ihres einbringe.",
-      badgeMaior:"Größtes Projekt"
+      badgeMaior:"Größtes Projekt",
+      labelDesafio:"Herausforderung", labelAbordagem:"Ansatz", labelResultado:"Ergebnis"
     },
-    caseClubdoctor:{ tag:"Vollständiger Marktplatz · Telemedizin", desc:"Vollständige Telemedizin-Plattform für Patienten und Fachkräfte: Terminplanung, digitale Patientenakte, Rezepte, Untersuchungsanforderungen, Nachrichten und Videosprechstunden, mit wiederkehrendem Abonnement (Club Doctor) und einem Netzwerk von über 80 Fachrichtungen in Brasilien, den USA, Europa und Venezuela.", li1:"Marktplatz für Patienten und Fachkräfte", li2:"Wiederkehrendes Abonnement & Zahlungen", li3:"LGPD- & HIPAA-konform ausgerichtet", li4:"Betrieb in 4 Ländern" },
-    caseEight:{ tag:"Verifiziertes Fachnetzwerk", desc:"Soziales Netzwerk für verifizierte Gesundheitsfachkräfte — der Einstiegspunkt des Doctor8-Ökosystems, mit Verifizierung der Berufszulassung in Brasilien, den USA und Europa.", li1:"Authentifizierung & Identitätsprüfung", li2:"Länderübergreifende Architektur" },
-    caseBalsamo:{ tag:"Intelligenter Katalog", desc:"Symptombasiertes Suchsystem für Heilkräutertees, das jahrzehntelanges brasilianisches Volkswissen mit einer Datenbank von 42 Pflanzen und 17 Protokollen verbindet.", li1:"Dynamische Suche & Filterung", li2:"Strukturierte Datenbank", li3:"UX für Content-Entdeckung" },
-    caseAcura:{ tag:"Institutionell · Gemeinnützig", desc:"Mehrsprachige institutionelle Website für einen Gesundheitsverband mit Spendensystem, in Doctor8 integrierter Telemedizin und einem öffentlichen Transparenzportal.", li1:"Wiederkehrende Online-Spenden", li2:"Systemübergreifende Integration", li3:"Mehrsprachige Inhalte (PT/ES)" },
+    caseClubdoctor:{ tag:"Vollständiger Marktplatz · Telemedizin", desafio:"Patienten in 4 Ländern ohne einheitlichen Zugang zu Fachärzten — und Gesundheitsfachkräfte ohne verifiziertes Netzwerk, um Patienten sicher aus der Ferne zu behandeln.", abordagem:"Vollständiger Marktplatz mit starker Authentifizierung, verschlüsselter digitaler Patientenakte, Terminplanung und Videosprechstunden — Architektur von Anfang an auf LGPD und HIPAA ausgelegt.", resultado:"Aktives Netzwerk mit über 80 Fachrichtungen, tätig in Brasilien, den USA, Europa und Venezuela, mit durchgehend geschützten Patientendaten.", li1:"Marktplatz für Patienten und Fachkräfte", li2:"Wiederkehrendes Abonnement & Zahlungen", li3:"LGPD- & HIPAA-konform ausgerichtet", li4:"Betrieb in 4 Ländern" },
+    caseEight:{ tag:"Verifiziertes Fachnetzwerk", desafio:"Bevor ein Patient einen Termin bucht, muss er darauf vertrauen können, dass die Person auf der anderen Seite eine echte, verifizierte Gesundheitsfachkraft ist.", abordagem:"Geschlossenes soziales Netzwerk mit Verifizierung der Berufszulassung in drei Regionen, als sicherer Einstiegspunkt zum Doctor8-Ökosystem.", resultado:"Die Vertrauensebene, auf der der gesamte länderübergreifende Betrieb von Doctor8 aufbaut.", li1:"Authentifizierung & Identitätsprüfung", li2:"Länderübergreifende Architektur" },
+    caseBalsamo:{ tag:"Intelligenter Katalog", desafio:"Jahrzehntelanges brasilianisches Volkswissen über Heilkräutertees, verstreut, ohne Möglichkeit zur Suche nach Symptomen.", abordagem:"Strukturierte Datenbank mit 42 Pflanzen und 17 Protokollen, mit dynamischer Suche und Filterung, entworfen für Laien.", resultado:"Ein laufender Katalog, genutzt als schnelle Nachschlagequelle nach Symptomen.", li1:"Dynamische Suche & Filterung", li2:"Strukturierte Datenbank", li3:"UX für Content-Entdeckung" },
+    caseAcura:{ tag:"Institutionell · Gemeinnützig", desafio:"Ein Gesundheitsverband musste Spenden sammeln, öffentliches Vertrauen gewinnen und Telemedizin anbieten, ohne alles von Grund auf neu zu bauen.", abordagem:"Mehrsprachige institutionelle Website mit wiederkehrenden Spenden und direkter Integration in die Telemedizin-Infrastruktur von Doctor8.", resultado:"Ein aktives öffentliches Transparenzportal mit integrierten Online-Spenden und Fernbehandlung.", li1:"Wiederkehrende Online-Spenden", li2:"Systemübergreifende Integration", li3:"Mehrsprachige Inhalte (PT/ES)" },
     caseNinebitts:{ tag:"Content-Automatisierung", desc:"Unabhängige Musikkurations-Marke, die gleichzeitig auf acht Plattformen veröffentlicht wird und auf einer eigenen Content-Automatisierungs-Pipeline läuft.", li1:"Automatisierte Multi-Channel-Veröffentlichung", li2:"Integrationen mit YouTube, Mixcloud und sozialen Netzwerken", li3:"Kurations- und Katalogsystem" },
     processo:{
-      tag:"04 · Prozess",
+      tag:"05 · Prozess",
       titleHtml:'Vom ersten Kontakt <span class="grad-text">bis zum Live-System.</span>',
       step1Title:"Diagnose", step1Desc:"Ich verstehe Ihr Problem, Budget und Ihren Zeitrahmen in einem direkten Gespräch — ohne Umschweife.",
       step2Title:"Angebot", step2Desc:"Umfang, Zeitrahmen und Investition werden schriftlich festgelegt, bevor auch nur eine Zeile Code geschrieben wird.",
@@ -253,7 +289,7 @@ window.I18N = {
       step4Title:"Launch & Partnerschaft", step4Desc:"Veröffentlichung, laufender Support und Weiterentwicklung des Systems, während Ihr Unternehmen wächst."
     },
     contato:{
-      tag:"05 · Kontakt",
+      tag:"06 · Kontakt",
       founderName:"Diego Albs",
       founderRole:"Gründer von 9bitts",
       titleHtml:'Lassen Sie uns <span class="grad-text">Ihr System bauen.</span>',

@@ -158,6 +158,19 @@ img{ max-width:100%; display:block; }
 .glass-card h3{ font-size:1.15rem; margin: 14px 0 10px; }
 .glass-card p{ color: var(--text-dim); font-size:.94rem; }
 
+/* ============ TRUST / SEGURANÇA ============ */
+.trust-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.trust-grid .glass-card h3{ font-size:1.05rem; }
+.trust-grid .glass-card p{ font-size:.9rem; }
+
+/* selo de garantia acima da grade de preços */
+.guarantee-badge{
+  display:inline-flex; align-items:center; gap:10px; margin-top:24px;
+  padding: 12px 20px; border-radius: 999px; border:1px solid var(--border);
+  background: var(--surface); font-size:.85rem; color: var(--text-dim);
+}
+.guarantee-badge .card-icon{ font-size:.9rem; }
+
 /* ============ PRICING ============ */
 .pricing-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .price-card{
@@ -187,6 +200,10 @@ img{ max-width:100%; display:block; }
 .case-info h3{ font-size:1.6rem; margin-top:12px; }
 .case-info h3 em{ font-style:normal; color: var(--text-dimmer); font-size:1rem; font-weight:400; margin-left:6px; }
 .case-info p{ color: var(--text-dim); margin-top:14px; max-width: 560px; font-size: .98rem; }
+
+.case-breakdown{ display:grid; grid-template-columns: repeat(3, 1fr); gap:22px; margin-top:20px; max-width: 720px; }
+.case-block-label{ display:block; font-family:'JetBrains Mono',monospace; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color: var(--accent-2); margin-bottom:8px; }
+.case-block p{ color: var(--text-dim); font-size:.92rem; line-height:1.55; margin:0; }
 .case-tech{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
 .case-tech li{ font-size:.75rem; font-family:'JetBrains Mono',monospace; color: var(--text-dim); border:1px solid var(--border); padding:6px 12px; border-radius:999px; }
 .case-link{ display:flex; align-items:center; gap:8px; font-family:'Space Grotesk',sans-serif; font-weight:500; white-space:nowrap; color: var(--accent); border-bottom:1px solid transparent; transition: border-color .2s; }
@@ -237,6 +254,8 @@ img{ max-width:100%; display:block; }
   .about-grid{ grid-template-columns: 1fr; }
   .pricing-grid{ grid-template-columns: repeat(2,1fr); }
   .timeline{ grid-template-columns: repeat(2,1fr); }
+  .trust-grid{ grid-template-columns: repeat(2,1fr); }
+  .case-breakdown{ grid-template-columns: 1fr; }
 }
 @media (max-width: 720px){
   .nav-links{
@@ -250,6 +269,7 @@ img{ max-width:100%; display:block; }
   .nav-toggle{ display:flex; }
   .pricing-grid{ grid-template-columns: 1fr; }
   .timeline{ grid-template-columns: 1fr; }
+  .trust-grid{ grid-template-columns: 1fr; }
   .case-card{ flex-direction:column; align-items:flex-start; }
   .hero-stats{ gap: 34px; }
   .lang-switch{ margin-left: auto; margin-right: 10px; }

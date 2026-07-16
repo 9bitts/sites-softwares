@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
 
@@ -43,6 +43,7 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#sobre" data-cursor="hover" data-i18n="nav.sobre">Sobre</a></li>
+      <li><a href="#seguranca" data-cursor="hover" data-i18n="nav.seguranca">Segurança</a></li>
       <li><a href="#servicos" data-cursor="hover" data-i18n="nav.servicos">Serviços</a></li>
       <li><a href="#portfolio" data-cursor="hover" data-i18n="nav.portfolio">Portfólio</a></li>
       <li><a href="proposta.html" data-cursor="hover" data-i18n="nav.proposta">Proposta</a></li>
@@ -72,9 +73,9 @@
         <span class="grad-text">funcionam de verdade.</span>
       </h1>
       <p class="hero-sub" data-reveal data-i18n="hero.sub">
-        Construo sites e plataformas sob medida para clínicas, negócios de bem-estar
-        e organizações que precisam de mais do que uma página institucional —
-        precisam de uma ferramenta que resolve um problema real.
+        Construo plataformas sob medida para clínicas, negócios de bem-estar e organizações
+        de saúde — com a segurança e a conformidade que dados sensíveis exigem,
+        desde a primeira linha de código.
       </p>
       <div class="hero-actions" data-reveal>
         <a href="#contato" class="btn btn-primary" data-cursor="hover"><span data-i18n="hero.cta1">Iniciar um projeto</span></a>
@@ -93,6 +94,10 @@
         <div class="stat">
           <span class="stat-num" data-count="100" data-suffix="%">0</span>
           <span class="stat-label" data-i18n="hero.stat3">código sob medida, zero templates genéricos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="28">0</span>
+          <span class="stat-label" data-i18n="hero.stat4">vulnerabilidades de segurança identificadas e corrigidas em auditoria</span>
         </div>
       </div>
     </div>
@@ -159,14 +164,52 @@
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
-  <section class="section section-alt" id="servicos">
+  <!-- SEGURANÇA & CONFORMIDADE -->
+  <section class="section section-alt" id="seguranca">
     <div class="container">
       <div class="section-head">
-        <span class="tag" data-reveal data-i18n="servicos.tag">02 · Serviços</span>
+        <span class="tag" data-reveal data-i18n="seguranca.tag">02 · Segurança &amp; Conformidade</span>
+        <h2 data-reveal data-i18n="seguranca.titleHtml">Não é promessa de marketing.<br><span class="grad-text">É arquitetura.</span></h2>
+        <p class="section-desc" data-reveal data-i18n="seguranca.desc">Todo sistema que construo já nasce pensado para lidar com dados sensíveis — porque foi assim que aprendi, construindo uma plataforma de saúde real, em produção, com pacientes de verdade.</p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="glass-card" data-reveal>
+          <span class="card-icon">◆</span>
+          <h3 data-i18n="seguranca.card1Title">Criptografia de ponta a ponta</h3>
+          <p data-i18n="seguranca.card1Desc">Dados sensíveis nunca trafegam nem ficam armazenados em texto puro — nem mesmo dentro do banco de dados.</p>
+        </div>
+        <div class="glass-card" data-reveal>
+          <span class="card-icon">◆</span>
+          <h3 data-i18n="seguranca.card2Title">Trilha de auditoria completa</h3>
+          <p data-i18n="seguranca.card2Desc">Todo acesso e toda alteração ficam registrados. Se algo mudar, dá para saber quem, quando e o quê.</p>
+        </div>
+        <div class="glass-card" data-reveal>
+          <span class="card-icon">◆</span>
+          <h3 data-i18n="seguranca.card3Title">LGPD &amp; GDPR desde o design</h3>
+          <p data-i18n="seguranca.card3Desc">Conformidade não é um formulário preenchido depois. É decisão de arquitetura tomada antes da primeira linha de código.</p>
+        </div>
+        <div class="glass-card" data-reveal>
+          <span class="card-icon">◆</span>
+          <h3 data-i18n="seguranca.card4Title">Assino acordo de tratamento de dados</h3>
+          <p data-i18n="seguranca.card4Desc">Se o seu negócio exige um DPA — ou um AV-Vertrag, na Alemanha — eu assino. Sem rodeio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag" data-reveal data-i18n="servicos.tag">03 · Serviços</span>
         <h2 data-reveal data-i18n="servicos.titleHtml">Pacotes claros. <span class="grad-text">Sem letra miúda.</span></h2>
         <p class="section-desc" data-reveal data-i18n="servicos.desc">Escopo, prazo e investimento definidos antes de começar. Cada pacote pode ser ajustado ao seu caso.</p>
         <a href="proposta.html" class="btn btn-ghost" data-cursor="hover" data-reveal style="margin-top:28px;"><span data-i18n="servicos.cta">Montar minha proposta →</span></a>
+        <div class="guarantee-badge" data-reveal>
+          <span class="card-icon">◆</span>
+          <span data-i18n="servicos.guarantee">Escopo, prazo e preço fechados por escrito antes de qualquer linha de código — sem surpresa na fatura.</span>
+        </div>
       </div>
 
       <div class="pricing-grid">
@@ -235,10 +278,10 @@
   </section>
 
   <!-- PORTFÓLIO -->
-  <section class="section" id="portfolio">
+  <section class="section section-alt" id="portfolio">
     <div class="container">
       <div class="section-head">
-        <span class="tag" data-reveal data-i18n="portfolio.tag">03 · Portfólio</span>
+        <span class="tag" data-reveal data-i18n="portfolio.tag">04 · Portfólio</span>
         <h2 data-reveal data-i18n="portfolio.titleHtml">Projetos reais, <span class="grad-text">no ar agora.</span></h2>
         <p class="section-desc" data-reveal data-i18n="portfolio.desc">Todos os projetos abaixo são meus — produtos que construí e opero em produção. Não é layout, é sistema no ar. É a mesma engenharia que aplico no seu.</p>
       </div>
@@ -250,9 +293,20 @@
           <div class="case-info">
             <span class="case-tag" data-i18n="caseClubdoctor.tag">Marketplace completo · Telemedicina</span>
             <h3>Doctor8 <em>(Club Doctor)</em></h3>
-            <p data-i18n="caseClubdoctor.desc">Plataforma completa de telemedicina para pacientes e profissionais: agendamento, prontuário digital,
-              receitas, exames, mensagens e teleconsulta, com assinatura recorrente (Club Doctor) e rede de mais
-              de 80 especialidades em Brasil, Estados Unidos, Europa e Venezuela.</p>
+            <div class="case-breakdown">
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelDesafio">Desafio</span>
+                <p data-i18n="caseClubdoctor.desafio">Pacientes em 4 países sem acesso unificado a especialistas — e profissionais de saúde sem uma rede verificada para atender remotamente com segurança.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelAbordagem">Abordagem</span>
+                <p data-i18n="caseClubdoctor.abordagem">Marketplace completo com autenticação forte, prontuário digital criptografado, agendamento e teleconsulta — arquitetura pensada desde o início para LGPD e HIPAA.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelResultado">Resultado</span>
+                <p data-i18n="caseClubdoctor.resultado">Rede ativa com mais de 80 especialidades, operando em Brasil, Estados Unidos, Europa e Venezuela, com dados de pacientes protegidos ponta a ponta.</p>
+              </div>
+            </div>
             <ul class="case-tech">
               <li data-i18n="caseClubdoctor.li1">Marketplace paciente + profissional</li>
               <li data-i18n="caseClubdoctor.li2">Assinatura recorrente &amp; pagamentos</li>
@@ -269,8 +323,20 @@
           <div class="case-info">
             <span class="case-tag" data-i18n="caseEight.tag">Rede profissional verificada</span>
             <h3>Doctor8 <em>(eight)</em></h3>
-            <p data-i18n="caseEight.desc">Rede social para profissionais de saúde verificados — porta de entrada do ecossistema Doctor8,
-              com verificação de registro profissional em Brasil, Estados Unidos e Europa.</p>
+            <div class="case-breakdown">
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelDesafio">Desafio</span>
+                <p data-i18n="caseEight.desafio">Antes de marcar uma consulta, o paciente precisa confiar que quem está do outro lado é um profissional de saúde real e verificado.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelAbordagem">Abordagem</span>
+                <p data-i18n="caseEight.abordagem">Rede social fechada com verificação de registro profissional em três regiões diferentes, servindo como porta de entrada segura para o ecossistema Doctor8.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelResultado">Resultado</span>
+                <p data-i18n="caseEight.resultado">Camada de confiança que sustenta toda a operação multi-país do Doctor8.</p>
+              </div>
+            </div>
             <ul class="case-tech">
               <li data-i18n="caseEight.li1">Autenticação &amp; verificação de identidade</li>
               <li data-i18n="caseEight.li2">Arquitetura multi-país</li>
@@ -285,8 +351,20 @@
           <div class="case-info">
             <span class="case-tag" data-i18n="caseBalsamo.tag">Catálogo inteligente</span>
             <h3>Bálsamo da Natureza <em>(Seu Enésio)</em></h3>
-            <p data-i18n="caseBalsamo.desc">Sistema de busca de chás medicinais por sintoma, cruzando décadas de conhecimento
-              popular brasileiro com uma base de dados de 42 plantas e 17 protocolos.</p>
+            <div class="case-breakdown">
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelDesafio">Desafio</span>
+                <p data-i18n="caseBalsamo.desafio">Décadas de conhecimento popular sobre chás medicinais espalhadas, sem nenhuma forma de busca por sintoma.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelAbordagem">Abordagem</span>
+                <p data-i18n="caseBalsamo.abordagem">Banco de dados estruturado com 42 plantas e 17 protocolos, com busca e filtro dinâmico pensados para quem não é especialista.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelResultado">Resultado</span>
+                <p data-i18n="caseBalsamo.resultado">Catálogo no ar, usado como referência de consulta rápida por sintoma.</p>
+              </div>
+            </div>
             <ul class="case-tech">
               <li data-i18n="caseBalsamo.li1">Busca e filtro dinâmico</li>
               <li data-i18n="caseBalsamo.li2">Banco de dados estruturado</li>
@@ -302,8 +380,20 @@
           <div class="case-info">
             <span class="case-tag" data-i18n="caseAcura.tag">Institucional · OSCIP</span>
             <h3>Acura Brasil</h3>
-            <p data-i18n="caseAcura.desc">Site institucional multilíngue para associação de saúde, com sistema de doações,
-              telemedicina integrada ao Doctor8 e portal público de transparência.</p>
+            <div class="case-breakdown">
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelDesafio">Desafio</span>
+                <p data-i18n="caseAcura.desafio">Associação de saúde precisava captar doações, ganhar confiança pública e oferecer telemedicina sem construir tudo do zero.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelAbordagem">Abordagem</span>
+                <p data-i18n="caseAcura.abordagem">Site institucional multilíngue com doação recorrente e integração direta com a infraestrutura de telemedicina do Doctor8.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label" data-i18n="portfolio.labelResultado">Resultado</span>
+                <p data-i18n="caseAcura.resultado">Portal público de transparência ativo, com doação online e atendimento remoto integrados.</p>
+              </div>
+            </div>
             <ul class="case-tech">
               <li data-i18n="caseAcura.li1">Doação online recorrente</li>
               <li data-i18n="caseAcura.li2">Integração entre sistemas</li>
@@ -337,10 +427,10 @@
   </section>
 
   <!-- PROCESSO -->
-  <section class="section section-alt" id="processo">
+  <section class="section" id="processo">
     <div class="container">
       <div class="section-head">
-        <span class="tag" data-reveal data-i18n="processo.tag">04 · Processo</span>
+        <span class="tag" data-reveal data-i18n="processo.tag">05 · Processo</span>
         <h2 data-reveal data-i18n="processo.titleHtml">Do primeiro contato <span class="grad-text">ao sistema no ar.</span></h2>
       </div>
 
@@ -349,7 +439,7 @@
           <span class="timeline-num">01</span>
           <div>
             <h3 data-i18n="processo.step1Title">Diagnóstico</h3>
-            <p data-i18n="processo.step1Desc">Entendemos sua dor, seu orçamento e seu prazo em uma conversa direta — sem enrolação.</p>
+            <p data-i18n="processo.step1Desc">Entendo sua dor, seu orçamento e seu prazo em uma conversa direta — sem enrolação.</p>
           </div>
         </div>
         <div class="timeline-item" data-reveal>
@@ -388,7 +478,7 @@
           <strong data-i18n="contato.founderName">Diego Albs</strong>
           <span data-i18n="contato.founderRole">Fundador da 9bitts</span>
         </p>
-        <span class="tag" data-i18n="contato.tag">05 · Contato</span>
+        <span class="tag" data-i18n="contato.tag">06 · Contato</span>
         <h2 data-i18n="contato.titleHtml">Vamos construir o <span class="grad-text">seu sistema?</span></h2>
         <p data-i18n="contato.desc">Conte o que você precisa. Respondo com um diagnóstico real, não um roteiro de vendas.</p>
 
@@ -414,7 +504,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="js/i18n.js?v=4"></script>
+<script src="js/i18n.js?v=5"></script>
 <script src="js/currency.js?v=3"></script>
 <script src="js/main.js?v=2"></script>
 </body>
