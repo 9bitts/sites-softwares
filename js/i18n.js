@@ -8,17 +8,17 @@ window.I18N = {
     hero: {
       eyebrow:"Disponível para novos projetos · 2026",
       titleHtml:'Sistemas web que<br><span class="grad-text">funcionam de verdade.</span>',
-      sub:"Construímos sites e plataformas sob medida para clínicas, negócios de bem-estar e organizações que precisam de mais do que uma página institucional — precisam de uma ferramenta que resolve um problema real.",
+      sub:"Construo sites e plataformas sob medida para clínicas, negócios de bem-estar e organizações que precisam de mais do que uma página institucional — precisam de uma ferramenta que resolve um problema real.",
       cta1:"Iniciar um projeto", cta2:"Ver o portfólio",
       stat1:"projetos entregues e no ar", stat2:"países atendidos", stat3:"código sob medida, zero templates genéricos"
     },
     marquee:{ m1:"Next-gen frontend", m2:"Arquitetura de sistemas", m3:"Autenticação & segurança", m4:"Automação & APIs", m5:"Design de interface", m6:"Performance & SEO técnico" },
     sobre:{
       tag:"01 · Sobre",
-      titleHtml:'Não vendemos "sites bonitos".<br>Construímos <span class="grad-text">sistemas que funcionam.</span>',
-      lead:"Cada projeto que entregamos nasceu de um problema real de negócio: uma rede de profissionais que precisava de verificação de identidade, um catálogo que precisava ser encontrado por sintoma, uma instituição que precisava captar doações e coordenar atendimento em emergências. O resultado é sempre o mesmo — tecnologia que desaparece e deixa só o resultado.",
+      titleHtml:'Não vendo "sites bonitos".<br>Construo <span class="grad-text">sistemas que funcionam.</span>',
+      lead:"Eu não construo para clientes e desapareço. Construo meus próprios produtos e opero cada um em produção: uma plataforma de telemedicina, uma rede profissional verificada, um catálogo de saúde que se busca por sintoma. Cada projeto nasceu de um problema real de negócio — e agora construo o seu com a mesma base. Tecnologia que desaparece e deixa só o resultado.",
       card1Title:"Sob medida", card1Desc:"Cada sistema é desenhado a partir do problema do seu negócio — nunca um template genérico adaptado.",
-      card2Title:"Tecnologia sólida", card2Desc:"Autenticação, banco de dados, automações e integrações — a mesma base usada em plataformas reais.",
+      card2Title:"Tecnologia sólida", card2Desc:"Autenticação, banco de dados, automações e integrações — a mesma base que uso nas minhas plataformas em produção.",
       card3Title:"Parceria contínua", card3Desc:"Manutenção, evolução e suporte depois do lançamento — o projeto não termina na entrega."
     },
     servicos:{
@@ -38,7 +38,7 @@ window.I18N = {
     portfolio:{
       tag:"03 · Portfólio",
       titleHtml:'Projetos reais, <span class="grad-text">no ar agora.</span>',
-      desc:"Cada case abaixo resolveu um problema concreto — não é só um layout, é um sistema em produção.",
+      desc:"Todos os projetos abaixo são meus — produtos que construí e opero em produção. Não é layout, é sistema no ar. É a mesma engenharia que aplico no seu.",
       badgeMaior:"Maior projeto"
     },
     caseClubdoctor:{ tag:"Marketplace completo · Telemedicina", desc:"Plataforma completa de telemedicina para pacientes e profissionais: agendamento, prontuário digital, receitas, exames, mensagens e teleconsulta, com assinatura recorrente (Club Doctor) e rede de mais de 80 especialidades em Brasil, Estados Unidos, Europa e Venezuela.", li1:"Marketplace paciente + profissional", li2:"Assinatura recorrente & pagamentos", li3:"Conformidade LGPD & HIPAA", li4:"Operação em 4 países" },
@@ -49,7 +49,7 @@ window.I18N = {
     processo:{
       tag:"04 · Processo",
       titleHtml:'Do primeiro contato <span class="grad-text">ao sistema no ar.</span>',
-      step1Title:"Diagnóstico", step1Desc:"Entendemos sua dor, seu orçamento e seu prazo em uma conversa direta — sem enrolação.",
+      step1Title:"Diagnóstico", step1Desc:"Entendo sua dor, seu orçamento e seu prazo em uma conversa direta — sem enrolação.",
       step2Title:"Proposta", step2Desc:"Escopo, prazo e investimento definidos por escrito antes de qualquer linha de código.",
       step3Title:"Construção", step3Desc:"Desenvolvimento com checkpoints de validação — você acompanha o sistema nascer.",
       step4Title:"Lançamento & parceria", step4Desc:"Publicação, suporte contínuo e evolução do sistema conforme seu negócio cresce."
@@ -59,7 +59,7 @@ window.I18N = {
       founderName:"Diego Albs",
       founderRole:"Fundador da 9bitts",
       titleHtml:'Vamos construir o <span class="grad-text">seu sistema?</span>',
-      desc:"Conte o que você precisa. Respondemos com um diagnóstico real, não um roteiro de vendas.",
+      desc:"Conte o que você precisa. Respondo com um diagnóstico real, não um roteiro de vendas.",
       emailBtn:"Enviar e-mail", whatsBtn:"Chamar no WhatsApp"
     },
     footer:{ tagline:"Sistemas web sob medida." },
@@ -107,17 +107,17 @@ window.I18N = {
     hero:{
       eyebrow:"Available for new projects · 2026",
       titleHtml:'Web systems that<br><span class="grad-text">actually work.</span>',
-      sub:"We build custom websites and platforms for clinics, wellness businesses and organizations that need more than an institutional page — they need a tool that solves a real problem.",
+      sub:"I build custom websites and platforms for clinics, wellness businesses and organizations that need more than an institutional page — they need a tool that solves a real problem.",
       cta1:"Start a project", cta2:"See the portfolio",
       stat1:"projects delivered and live", stat2:"countries served", stat3:"custom code, zero generic templates"
     },
     marquee:{ m1:"Next-gen frontend", m2:"Systems architecture", m3:"Authentication & security", m4:"Automation & APIs", m5:"Interface design", m6:"Performance & technical SEO" },
     sobre:{
       tag:"01 · About",
-      titleHtml:'We don&#8217;t sell "pretty websites".<br>We build <span class="grad-text">systems that work.</span>',
-      lead:"Every project we deliver started as a real business problem: a professional network that needed identity verification, a catalog that needed to be searchable by symptom, an institution that needed to raise donations and coordinate emergency care. The outcome is always the same — technology that disappears and leaves only the result.",
+      titleHtml:'I don&#8217;t sell "pretty websites".<br>I build <span class="grad-text">systems that work.</span>',
+      lead:"I don&#8217;t build for clients and disappear. I build my own products and run each one in production: a telehealth platform, a verified professional network, a health catalog searchable by symptom. Every one started as a real business problem — and now I build yours on the same foundation. Technology that disappears and leaves only the result.",
       card1Title:"Custom-built", card1Desc:"Every system is designed around your business problem — never a generic template stretched to fit.",
-      card2Title:"Solid technology", card2Desc:"Authentication, databases, automations and integrations — the same foundation used in real production platforms.",
+      card2Title:"Solid technology", card2Desc:"Authentication, databases, automations and integrations — the same foundation I use in my own production platforms.",
       card3Title:"Ongoing partnership", card3Desc:"Maintenance, evolution and support after launch — the project doesn&#8217;t end at delivery."
     },
     servicos:{
@@ -137,7 +137,7 @@ window.I18N = {
     portfolio:{
       tag:"03 · Portfolio",
       titleHtml:'Real projects, <span class="grad-text">live right now.</span>',
-      desc:"Every case below solved a concrete problem — it&#8217;s not just a layout, it&#8217;s a system in production.",
+      desc:"Every project below is my own — products I built and run in production. Not a layout, a live system. The same engineering I bring to yours.",
       badgeMaior:"Biggest project"
     },
     caseClubdoctor:{ tag:"Full marketplace · Telehealth", desc:"Complete telehealth platform for patients and professionals: scheduling, digital medical records, prescriptions, lab orders, messaging and video consultations, with a recurring subscription (Club Doctor) and a network of 80+ specialties across Brazil, the United States, Europe and Venezuela.", li1:"Patient + professional marketplace", li2:"Recurring subscription & payments", li3:"LGPD & HIPAA-aligned", li4:"Operating in 4 countries" },
@@ -148,7 +148,7 @@ window.I18N = {
     processo:{
       tag:"04 · Process",
       titleHtml:'From first contact <span class="grad-text">to system live.</span>',
-      step1Title:"Diagnosis", step1Desc:"We understand your pain point, budget and timeline in one direct conversation — no runaround.",
+      step1Title:"Diagnosis", step1Desc:"I understand your pain point, budget and timeline in one direct conversation — no runaround.",
       step2Title:"Proposal", step2Desc:"Scope, timeline and investment defined in writing before a single line of code.",
       step3Title:"Build", step3Desc:"Development with validation checkpoints — you watch the system come to life.",
       step4Title:"Launch & partnership", step4Desc:"Launch, ongoing support and system evolution as your business grows."
@@ -158,7 +158,7 @@ window.I18N = {
       founderName:"Diego Albs",
       founderRole:"Founder of 9bitts",
       titleHtml:'Ready to build <span class="grad-text">your system?</span>',
-      desc:"Tell us what you need. We respond with a real diagnosis, not a sales script.",
+      desc:"Tell me what you need. I respond with a real diagnosis, not a sales script.",
       emailBtn:"Send an email", whatsBtn:"Message on WhatsApp"
     },
     footer:{ tagline:"Custom web systems." },
@@ -206,17 +206,17 @@ window.I18N = {
     hero:{
       eyebrow:"Verfügbar für neue Projekte · 2026",
       titleHtml:'Web-Systeme, die<br><span class="grad-text">wirklich funktionieren.</span>',
-      sub:"Wir entwickeln maßgeschneiderte Websites und Plattformen für Kliniken, Wellness-Unternehmen und Organisationen, die mehr brauchen als eine institutionelle Seite — sie brauchen ein Werkzeug, das ein echtes Problem löst.",
+      sub:"Ich entwickle maßgeschneiderte Websites und Plattformen für Kliniken, Wellness-Unternehmen und Organisationen, die mehr brauchen als eine institutionelle Seite — sie brauchen ein Werkzeug, das ein echtes Problem löst.",
       cta1:"Projekt starten", cta2:"Portfolio ansehen",
       stat1:"gelieferte, laufende Projekte", stat2:"bediente Länder", stat3:"maßgeschneiderter Code, keine Templates von der Stange"
     },
     marquee:{ m1:"Next-gen frontend", m2:"Systemarchitektur", m3:"Authentifizierung & Sicherheit", m4:"Automatisierung & APIs", m5:"Interface-Design", m6:"Performance & technisches SEO" },
     sobre:{
       tag:"01 · Über uns",
-      titleHtml:'Wir verkaufen keine "schönen Websites".<br>Wir bauen <span class="grad-text">Systeme, die funktionieren.</span>',
-      lead:"Jedes Projekt, das wir liefern, entstand aus einem echten Geschäftsproblem: ein Netzwerk von Fachkräften, das eine Identitätsprüfung brauchte, ein Katalog, der nach Symptomen durchsuchbar sein musste, eine Institution, die Spenden sammeln und Nothilfe koordinieren musste. Das Ergebnis ist immer dasselbe — Technologie, die verschwindet und nur das Resultat übrig lässt.",
+      titleHtml:'Ich verkaufe keine "schönen Websites".<br>Ich baue <span class="grad-text">Systeme, die funktionieren.</span>',
+      lead:"Ich baue nicht für Kunden und verschwinde. Ich baue meine eigenen Produkte und betreibe jedes davon in Produktion: eine Telemedizin-Plattform, ein verifiziertes Fachnetzwerk, einen nach Symptomen durchsuchbaren Gesundheitskatalog. Jedes entstand aus einem echten Geschäftsproblem — und jetzt baue ich Ihres auf derselben Grundlage. Technologie, die verschwindet und nur das Resultat übrig lässt.",
       card1Title:"Maßgeschneidert", card1Desc:"Jedes System wird um Ihr Geschäftsproblem herum entworfen — niemals eine angepasste Standardvorlage.",
-      card2Title:"Solide Technologie", card2Desc:"Authentifizierung, Datenbanken, Automatisierungen und Integrationen — dieselbe Grundlage wie in echten Produktionsplattformen.",
+      card2Title:"Solide Technologie", card2Desc:"Authentifizierung, Datenbanken, Automatisierungen und Integrationen — dieselbe Grundlage, die ich in meinen eigenen Produktionsplattformen nutze.",
       card3Title:"Kontinuierliche Partnerschaft", card3Desc:"Wartung, Weiterentwicklung und Support nach dem Launch — das Projekt endet nicht mit der Lieferung."
     },
     servicos:{
@@ -236,7 +236,7 @@ window.I18N = {
     portfolio:{
       tag:"03 · Portfolio",
       titleHtml:'Echte Projekte, <span class="grad-text">gerade jetzt live.</span>',
-      desc:"Jeder Fall unten hat ein konkretes Problem gelöst — kein reines Layout, sondern ein System im produktiven Einsatz.",
+      desc:"Alle Projekte unten sind meine eigenen — Produkte, die ich gebaut habe und in Produktion betreibe. Kein Layout, ein Live-System. Dieselbe Technik, die ich in Ihres einbringe.",
       badgeMaior:"Größtes Projekt"
     },
     caseClubdoctor:{ tag:"Vollständiger Marktplatz · Telemedizin", desc:"Vollständige Telemedizin-Plattform für Patienten und Fachkräfte: Terminplanung, digitale Patientenakte, Rezepte, Untersuchungsanforderungen, Nachrichten und Videosprechstunden, mit wiederkehrendem Abonnement (Club Doctor) und einem Netzwerk von über 80 Fachrichtungen in Brasilien, den USA, Europa und Venezuela.", li1:"Marktplatz für Patienten und Fachkräfte", li2:"Wiederkehrendes Abonnement & Zahlungen", li3:"LGPD- & HIPAA-konform ausgerichtet", li4:"Betrieb in 4 Ländern" },
@@ -247,7 +247,7 @@ window.I18N = {
     processo:{
       tag:"04 · Prozess",
       titleHtml:'Vom ersten Kontakt <span class="grad-text">bis zum Live-System.</span>',
-      step1Title:"Diagnose", step1Desc:"Wir verstehen Ihr Problem, Budget und Ihren Zeitrahmen in einem direkten Gespräch — ohne Umschweife.",
+      step1Title:"Diagnose", step1Desc:"Ich verstehe Ihr Problem, Budget und Ihren Zeitrahmen in einem direkten Gespräch — ohne Umschweife.",
       step2Title:"Angebot", step2Desc:"Umfang, Zeitrahmen und Investition werden schriftlich festgelegt, bevor auch nur eine Zeile Code geschrieben wird.",
       step3Title:"Umsetzung", step3Desc:"Entwicklung mit Validierungs-Checkpoints — Sie verfolgen, wie das System entsteht.",
       step4Title:"Launch & Partnerschaft", step4Desc:"Veröffentlichung, laufender Support und Weiterentwicklung des Systems, während Ihr Unternehmen wächst."
@@ -257,7 +257,7 @@ window.I18N = {
       founderName:"Diego Albs",
       founderRole:"Gründer von 9bitts",
       titleHtml:'Lassen Sie uns <span class="grad-text">Ihr System bauen.</span>',
-      desc:"Erzählen Sie uns, was Sie brauchen. Wir antworten mit einer echten Diagnose, nicht mit einem Verkaufsskript.",
+      desc:"Erzählen Sie mir, was Sie brauchen. Ich antworte mit einer echten Diagnose, nicht mit einem Verkaufsskript.",
       emailBtn:"E-Mail senden", whatsBtn:"Auf WhatsApp schreiben"
     },
     footer:{ tagline:"Individuelle Web-Systeme." },
